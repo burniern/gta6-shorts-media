@@ -172,20 +172,22 @@ def frame(base, seg, t, words=None):
                    stroke_width=4, stroke_fill=(15, 8, 20))
             y += size * 1.1
 
+    first = seg.get("_first")
     if seg.get("caption"):
-        f = font(F_BLACK, 72)
+        f = font(F_BLACK, 100 if first else 72)  # 1er plan = accroche complète (sert aussi de couverture)
         toks = []
         for i, chunk in enumerate(seg["caption"].split("*")):
             for w in chunk.split():
                 toks.append(f"*{w}*" if i % 2 else w)
         lines = wrap(d, " ".join(toks), f, W - 140)
         lines = [ln.replace("* *", " ") for ln in lines]
-        y0 = 880 - (len(lines) - 1) * 44 + int((1 - ease) * 30)
+        lh = 120 if first else 90
+        y0 = (1150 if first else 880) - (len(lines) - 1) * lh // 2 + (0 if first else int((1 - ease) * 30))
         for i, ln in enumerate(lines):
-            draw_rich_line(d, ln, f, y0 + i * 90)
+            draw_rich_line(d, ln, f, y0 + i * lh)
 
     # sous-titres mot à mot (2-3 mots, mot prononcé en surbrillance, effet « pop »)
-    if words:
+    if words and not first:
         cur = max([i for i, (_, a, _) in enumerate(words) if a <= t] or [0])
         c0 = (cur // 3) * 3
         chunk = words[c0:c0 + 3]
@@ -307,6 +309,7 @@ def main(script_path, out_path):
     for y in range(H):  # voile sombre, plus dense au centre (zone texte)
         a = int(55 + 110 * math.exp(-((y - 1100) / 520) ** 2))
         sd.line([(0, y), (W, y)], fill=(18, 8, 26, a))
+    cfg["segments"][0]["_first"] = True  # pas de sous-titres mot à mot sur l'accroche
     seg_starts = []
     for si, (seg, dur) in enumerate(zip(cfg["segments"], durs)):
         nf = max(1, round(dur * FPS))

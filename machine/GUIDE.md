@@ -12,7 +12,7 @@ Budget vidIQ : 150 crédits/mois, donc ~5 crédits par jour maximum.
 
 ## 2. Recettes virales déjà identifiées (analyse vidIQ du 17.11.2026)
 Points communs des Reels GTA 6 qui ont fait 30 à 100x la moyenne de leur compte :
-- **Un nouvel élément à l'écran toutes les 0,8 à 1,5 s** (sous-titre, chiffre, étiquette). make_short.py le fait : sous-titres mot à mot, gros chiffre « big », étiquette « tag ». => phrases COURTES (6-12 mots), beaucoup de segments (8 à 12).
+- **Un nouvel élément à l'écran toutes les 0,8 à 1,5 s** (sous-titre, chiffre, étiquette). make_short.py le fait : sous-titres mot à mot, gros chiffre « big », étiquette « tag ». => phrases COURTES (6-12 mots), 5 à 7 segments (voir §3).
 - **Un effet sonore sur chaque apparition** (fait automatiquement : whoosh/impact/pop).
 - **Accroche paradoxale ou choc dans la 1re seconde**, puis relance, puis chute qui contredit le début, puis question binaire.
 - **La musique se coupe avant la question finale** (fait automatiquement).
@@ -25,7 +25,16 @@ Concepts qui marchent (à adapter, pas à copier mot pour mot) :
 - Pousser le PARTAGE : « Envoie ça à ton pote qui... » (les partages en message privé sont le signal n°1 d'Instagram).
 
 ## 3. Règles de viralité
-- 15 à 35 s. Segment 1 = accroche (jamais d'intro). Dernier segment = question binaire.
+### Leçons des statistiques réelles du compte (17.11.2026, 4 Reels, ~560 vues)
+- Durée de vue moyenne ~8 s sur des vidéos de 20-30 s => vidéos de **12 à 18 s**, **5 à 7 segments**.
+- 0 partage / 0 commentaire / 0 enregistrement : l'appel au partage dans la description ne suffit pas.
+  => **Segment 2 ou 3 (avant la 6e seconde) = appel au partage DANS la vidéo** : say « Envoie ça à ton pote qui ... », tag « ENVOIE À UN POTE ». Le pote visé doit être drôle et précis (« ton pote qui dit qu'il finit GTA 6 en un week-end »).
+  => La question finale doit tenir dans les 12 premières secondes.
+- Meilleur Reel (189 vues, 45,9 % d'abandon, 2,9 % de J'aime) : « 1 h par soir = fini en février » => accroche qui parle au spectateur + calcul concret qui le concerne. **Accroches en « tu / ta / ton »** : « Si tu… », « Ta PS5… », « Ton pote… ».
+- Segment 1 = accroche COMPLÈTE dans "caption" (affichée en grand sur la 1re image, qui sert de couverture ; pas de sous-titres mot à mot sur ce segment). Courte (≤ 7 mots), choc, compréhensible sans le son.
+- Privilégier les sujets qu'on envoie à un pote : mèmes de joueur, défis, « toi vs ton pote », calculs persos.
+### Règles générales
+- Segment 1 = accroche (jamais d'intro). Dernier segment = question binaire.
 - "big" = un chiffre ou un mot fort (pas d'emoji). "tag" = étiquette de contexte. "caption" = idée clé, *mots dorés*.
 - Texte du post : 1 phrase de curiosité + appel au partage + 4 à 6 hashtags (#GTA6 #GTAVI #gaming #jeuxvideo ...).
 
