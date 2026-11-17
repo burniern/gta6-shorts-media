@@ -1,0 +1,41 @@
+{
+ "voice": "chatterbox:none",
+ "segments": [
+  {
+   "say": "Des gens posent des jours de congé... juste pour jouer à GTA 6 !",
+   "caption": "Des jours de congé *pour GTA 6* !",
+   "tag": "C'EST JEUDI",
+   "big": "19.11"
+  },
+  {
+   "say": "Selon une grande chaîne d'info américaine, la sortie pourrait même toucher les congés au travail.",
+   "caption": "Impact sur les *congés* au travail",
+   "tag": "CNBC"
+  },
+  {
+   "say": "Mais aussi la livraison de repas, le streaming... et même le tourisme à Miami !",
+   "caption": "Livraison, streaming, *tourisme à Miami*"
+  },
+  {
+   "say": "Pour une autre chaîne d'info américaine, c'est carrément le plus gros événement de l'année.",
+   "caption": "Le *plus gros événement* de l'année",
+   "tag": "CNN"
+  },
+  {
+   "say": "Plus gros que n'importe quel film sorti cette année.",
+   "caption": "Plus gros que *n'importe quel film*",
+   "big": "FILMS"
+  },
+  {
+   "say": "Il faut dire que le dernier GTA est sorti en deux mille treize !",
+   "caption": "Dernier GTA : *2013*",
+   "big": "13 ans"
+  },
+  {
+   "say": "Et toi, tu poses ta journée jeudi ? Dis-le en commentaire !",
+   "caption": "Tu poses *ta journée* ?",
+   "big": "?"
+  }
+ ],
+ "broll": true
+}

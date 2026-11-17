@@ -1,0 +1,41 @@
+{
+ "voice": "chatterbox:none",
+ "segments": [
+  {
+   "say": "Tu as encore une vieille console ? Écoute bien ça.",
+   "caption": "Tu as une *vieille console* ?",
+   "tag": "GTA 6",
+   "big": "!"
+  },
+  {
+   "say": "GTA 6 sort jeudi sur PlayStation 5 et Xbox Series.",
+   "caption": "Jeudi sur *PS5* et *Xbox Series*",
+   "big": "19.11"
+  },
+  {
+   "say": "Mais il n'y aura pas de version normale pour la Xbox One.",
+   "caption": "Pas de version *Xbox One*",
+   "big": "NON"
+  },
+  {
+   "say": "La seule solution, c'est le cloud gaming de Microsoft.",
+   "caption": "Solution : le *cloud gaming*",
+   "big": "CLOUD"
+  },
+  {
+   "say": "Le jeu tourne sur des serveurs, et tu le reçois en streaming.",
+   "caption": "Le jeu arrive *en streaming*"
+  },
+  {
+   "say": "Et bonne nouvelle : si tu as précommandé, tu peux déjà le télécharger depuis le dix novembre.",
+   "caption": "Préchargement depuis le *10 novembre*",
+   "big": "10.11"
+  },
+  {
+   "say": "Tu joues sur quelle console ? Dis-le en commentaire !",
+   "caption": "Tu joues sur *quelle console* ?",
+   "big": "?"
+  }
+ ],
+ "broll": true
+}

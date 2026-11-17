@@ -1,0 +1,40 @@
+{
+ "voice": "chatterbox:none",
+ "segments": [
+  {
+   "say": "Attention ! Si tu attends GTA Online sur GTA 6... j'ai une mauvaise nouvelle.",
+   "caption": "Pas de *GTA Online* au lancement ?",
+   "tag": "SORTIE JEUDI",
+   "big": "0"
+  },
+  {
+   "say": "Jeudi, le jeu sort uniquement avec le mode histoire.",
+   "caption": "Jeudi : *mode histoire* uniquement",
+   "big": "SOLO"
+  },
+  {
+   "say": "Aucun mode en ligne n'a été annoncé pour le lancement.",
+   "caption": "Aucun mode en ligne *annoncé*"
+  },
+  {
+   "say": "Pour comparer, sur l'ancien épisode, le mode en ligne était arrivé deux semaines après la sortie.",
+   "caption": "L'ancien : Online *2 semaines* après",
+   "big": "2013"
+  },
+  {
+   "say": "Et ce n'est pas tout : pas de version PC au lancement non plus.",
+   "caption": "Et *pas de PC* non plus",
+   "big": "PC ?"
+  },
+  {
+   "say": "Seulement sur PlayStation 5 et Xbox Series.",
+   "caption": "Seulement *PS5* et *Xbox Series*"
+  },
+  {
+   "say": "Toi, tu joues en solo ou tu attends le mode en ligne ? Dis-le en commentaire !",
+   "caption": "Solo ou *Online* ?",
+   "big": "?"
+  }
+ ],
+ "broll": true
+}
