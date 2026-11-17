@@ -1,0 +1,60 @@
+{
+ "voice": "chatterbox:none",
+ "broll": true,
+ "segments": [
+  {
+   "say": "Dans GTA 6, tu peux être en plein soleil... et sous l'orage deux rues plus loin.",
+   "caption": "Soleil ici, *orage* là-bas",
+   "tag": "NOUVELLES IMAGES",
+   "big": "!"
+  },
+  {
+   "say": "Le seize novembre, de nouvelles images du jeu ont été publiées avec une chaîne météo américaine.",
+   "caption": "Images publiées *le 16 novembre*",
+   "big": "16.11"
+  },
+  {
+   "say": "Et elles montrent une météo bien plus folle que dans l'ancien épisode.",
+   "caption": "Une météo *dynamique*"
+  },
+  {
+   "say": "D'abord, il peut pleuvoir dans un seul quartier.",
+   "caption": "Pluie *localisée*",
+   "big": "1"
+  },
+  {
+   "say": "Ensuite, les flaques restent même après la pluie.",
+   "caption": "Les *flaques* restent",
+   "big": "2"
+  },
+  {
+   "say": "Le vent fait voler les cheveux et les débris sur les toits.",
+   "caption": "Le *vent* sur les toits",
+   "big": "3"
+  },
+  {
+   "say": "Il y aura même du brouillard sur l'océan.",
+   "caption": "*Brouillard* sur l'océan",
+   "big": "4"
+  },
+  {
+   "say": "Et il y aura même des tempêtes tropicales.",
+   "caption": "Tempêtes tropicales et *ouragans*",
+   "big": "5"
+  },
+  {
+   "say": "Rockstar parle d'une météo plus locale et plus persistante.",
+   "caption": "Plus *locale*, plus *persistante*",
+   "tag": "ROCKSTAR"
+  },
+  {
+   "say": "Envoie ça à ton pote qui conduit déjà mal quand il fait beau.",
+   "caption": "Envoie ça à *ton pote*"
+  },
+  {
+   "say": "Alors, toi : course poursuite sous l'ouragan, oui ou non ?",
+   "caption": "Sous l'ouragan : *oui ou non* ?",
+   "big": "?"
+  }
+ ]
+}

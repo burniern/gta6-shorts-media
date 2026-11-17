@@ -49,3 +49,11 @@ def verifier(path, attendu):
         if r >= best:
             best, best_end = r, w.end
     return best, best_end
+
+
+def liberer():
+    """Libère le modèle Whisper (RAM) avant de relancer Chatterbox : évite le SIGKILL (OOM) au 2e essai."""
+    global _model
+    _model = None
+    import gc
+    gc.collect()

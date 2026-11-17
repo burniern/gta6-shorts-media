@@ -10,7 +10,7 @@ OUT = os.path.join(HERE, "broll")
 QUERIES = ["miami night", "miami beach", "miami skyline", "neon city night", "police car lights",
            "sports car night", "palm trees sunset", "florida swamp", "speedboat ocean", "highway night drive",
            "nightclub lights", "money cash", "city traffic night aerial", "sunset beach drone", "helicopter city"]
-BLOCKED = {15936, 190482, 24603, 253425, 253426, 2860, 7315, 80724, 8675}  # clips refusés après vérification visuelle (hors sujet ou personnes)
+BLOCKED = {15936, 190482, 24603, 253425, 253426, 2860, 7315, 80724, 8675, 110933, 253391, 31956, 37283, 137765, 16046, 114445, 135480, 180386}  # clips refusés après vérification visuelle (hors sujet ou personnes)
 BAD = re.compile(r"\b(blood|weapon|gun|accident|crash|funeral|war|protest|injur|dead|death|kid|child)\b", re.I)
 
 

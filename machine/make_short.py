@@ -193,6 +193,10 @@ def frame(base, seg, t, words=None):
         sc = 1.12 - 0.12 * min(1.0, max(0.0, since) / 0.09)
         f = font(F_BLACK, int(104 * sc))
         widths = [d.textlength(w.upper() + " ", font=f) for w, _, _ in chunk]
+        tot_w = sum(widths) - d.textlength(" ", font=f)
+        if tot_w > W - 90:  # mots longs (ex. QUATRE-VINGTS) : on réduit pour ne pas déborder
+            f = font(F_BLACK, max(40, int(104 * sc * (W - 90) / tot_w)))
+            widths = [d.textlength(w.upper() + " ", font=f) for w, _, _ in chunk]
         x = (W - sum(widths) + d.textlength(" ", font=f)) / 2
         for j, (w, a, b) in enumerate(chunk):
             on = (c0 + j) == cur
@@ -242,7 +246,9 @@ def main(script_path, out_path):
         from verif_voix import verifier
         todo = list(missing)
         best = {}  # i -> (score, fichier, fin)
+        from verif_voix import liberer
         for essai in range(3):
+            liberer()  # Whisper hors RAM pendant Chatterbox (sinon OOM au 2e essai)
             jobs = os.path.join(tmp, "jobs.json")
             outs = {i: os.path.join(tmp, f"t{i:03d}_{essai}.wav") for i in todo}
             json.dump([{"text": cfg["segments"][i].get("phon", cfg["segments"][i]["say"]), "out": outs[i]} for i in todo], open(jobs, "w"))

@@ -1,0 +1,56 @@
+{
+ "voice": "chatterbox:none",
+ "broll": true,
+ "segments": [
+  {
+   "say": "Attention : GTA 6 peut prendre un tiers de ta console !",
+   "caption": "Un *tiers* de ta console",
+   "tag": "ATTENTION",
+   "big": "1/3"
+  },
+  {
+   "say": "Il faut jusqu'à deux cent douze gigas, c'est confirmé par Rockstar.",
+   "caption": "Jusqu'à *212 Go*",
+   "big": "212 Go"
+  },
+  {
+   "say": "Sur la première PS5, tu as environ six cent soixante-sept gigas de libre.",
+   "caption": "PS5 d'origine : *667 Go* utilisables",
+   "big": "667"
+  },
+  {
+   "say": "Donc le jeu prend presque un tiers de la place.",
+   "caption": "Presque *un tiers* de la place",
+   "big": "32 %"
+  },
+  {
+   "say": "Et le téléchargement ? Avec une fibre à un gigabit, environ une demi-heure.",
+   "caption": "Fibre 1 Gbit/s : *≈ 30 min*",
+   "big": "30 min"
+  },
+  {
+   "say": "À cent mégabits, compte près de cinq heures.",
+   "caption": "100 Mbit/s : *≈ 5 h*",
+   "big": "5 h"
+  },
+  {
+   "say": "À cinquante mégabits, plus de neuf heures !",
+   "caption": "50 Mbit/s : *9 h+*",
+   "big": "9 h"
+  },
+  {
+   "say": "Bonne nouvelle : le préchargement est ouvert depuis le dix novembre.",
+   "caption": "Préchargement depuis le *10 novembre*",
+   "big": "10.11"
+  },
+  {
+   "say": "Envoie ça à ton pote qui n'a pas encore téléchargé le jeu.",
+   "caption": "Envoie ça à *ton pote*"
+  },
+  {
+   "say": "Alors, toi : déjà téléchargé, oui ou non ?",
+   "caption": "Déjà téléchargé : *oui ou non* ?",
+   "big": "?"
+  }
+ ]
+}

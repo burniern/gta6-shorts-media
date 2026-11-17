@@ -1,0 +1,60 @@
+{
+ "voice": "chatterbox:none",
+ "broll": true,
+ "segments": [
+  {
+   "say": "Si tu joues une heure par soir, tu finis GTA 6... en février.",
+   "caption": "1 h par soir = fini *en février*",
+   "tag": "CALCUL",
+   "big": "FÉV."
+  },
+  {
+   "say": "Fais le calcul avec moi.",
+   "caption": "Fais *le calcul*"
+  },
+  {
+   "say": "Un des patrons du studio Rockstar North a fini le jeu en environ quatre-vingts heures.",
+   "caption": "Environ *80 heures*",
+   "big": "80 h"
+  },
+  {
+   "say": "Ça comprend l'histoire et quelques missions secondaires.",
+   "caption": "Histoire + *missions secondaires*"
+  },
+  {
+   "say": "Une heure par soir dès jeudi, ça fait quatre-vingts soirs.",
+   "caption": "1 h par soir = *80 soirs*",
+   "big": "80"
+  },
+  {
+   "say": "Donc fin du jeu vers le six février.",
+   "caption": "Fini vers le *6 février*",
+   "big": "06.02"
+  },
+  {
+   "say": "Avec deux heures par soir, ça fait quarante soirs. Fini fin décembre.",
+   "caption": "2 h par soir = *fin décembre*",
+   "big": "40"
+  },
+  {
+   "say": "Et si tu veux absolument tout finir ?",
+   "caption": "Et le *100 %* ?",
+   "big": "100 %"
+  },
+  {
+   "say": "Un journaliste spécialisé estime plus de deux cents heures pour le trophée platine.",
+   "caption": "Estimation : *200 h+* pour le platine",
+   "big": "200 h",
+   "tag": "ESTIMATION"
+  },
+  {
+   "say": "Envoie ça à ton pote qui dit qu'il le finit en un week-end.",
+   "caption": "Envoie ça à *ton pote*"
+  },
+  {
+   "say": "Et toi, tu fonces sur l'histoire, ou tu fais tout à fond ?",
+   "caption": "Histoire ou *100 %* ?",
+   "big": "?"
+  }
+ ]
+}
