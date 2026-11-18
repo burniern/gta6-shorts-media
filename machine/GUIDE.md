@@ -1,5 +1,30 @@
 # Machine à shorts GTA 6 — guide de production
 
+## 0. RÈGLES EN VIGUEUR DEPUIS LE 18.11.2026 (prioritaires sur tout le reste du guide)
+Stats du 18.11 : mème « Toi demain matin au boulot » (11 s) = 52,8 % d'abandon (mieux que la moyenne), 0,9 % de J'aime ;
+news « Pas sorti, déjà jeu de l'année » (15 s) = 60 % d'abandon, 3 s de vue moyenne. 0 partage partout :
+« Envoie ça à ton pote » ne marche pas. On perd ~50 % des gens dans les 3 premières secondes => problème VISUEL (fond calme).
+- **Durée : 8 à 12 s.** 4 à 6 segments. Supprimer le segment « ENVOIE À UN POTE ».
+- **Format principal (4 vidéos sur 6) : mèmes « Toi quand… » / situations de joueur.** Les news sont racontées sous cet angle
+  (« Toi quand tu apprends que… »), avec le fait exact.
+- **Appel à l'action = commentaire ou tag**, jamais « envoie à un pote » : question binaire à la fin (« Congé ou malade ? »)
+  ou « Tague ton pote qui… » (tag « TAGUE-LE »). Le texte du post finit par la question + « 👇 ».
+- **Première seconde** : make_short.py fait déjà flash, zoom « punch », tremblement, accroche qui « claque » et un nouveau plan
+  toutes les 1,7 s (clips classés par mouvement, broll/MOTION.json). Garder l'accroche ≤ 7 mots.
+- **Visage humain sur l'accroche** : `"face": "<mot-clé>"` (shocked, laughing, celebrating, tired, alarm, phone, gamer, disappointed…)
+  prend une vraie réaction humaine libre de droits dans broll/faces/ (télécharger : `python3 fetch_broll.py 2 faces`,
+  puis planche contact et suppression des clips hors sujet, d'animaux, d'enfants ou montrant l'écran d'un autre jeu).
+  `"opener": "<mot-clé>"` (fireworks, drift, police, neon…) choisit le 1er plan dans broll/INDEX.txt.
+- **Format « conversation »** (très partageable) : `"voice": "none"`, segments avec `"chat": [["lui"|"moi", "texte"]]` et `"dur"`
+  (≈1,4-1,9 s par message), `"chat_name": "Kevin"` ; 1er segment = accroche en caption, dernier = caption « *Tague* ton Kevin ».
+  Exemple : machine/scripts/2026-11-18_2_nuit-blanche_v3.json. Pas d'emoji dans les textes (police).
+- **Mode sans voix** : `"voice": "none"` + `"dur"` par segment ; texte + musique uniquement.
+- **Tests A/B automatiques chaque jour** : sur 6 vidéos, au moins 2 sans voix (dont 1 conversation), au moins 3 avec visage.
+  Noter dans veille/AAAA-MM-JJ.md la variante de chaque vidéo (voix/sans voix, visage/pas, format). Le lendemain, comparer
+  abandon 3 s, durée de vue et J'aime par variante et écrire le gagnant dans §3.
+- **Story automatique** : chaque Reel est aussi publié en story Instagram 3 min après (même vidéo, sans texte).
+- **Couverture** : `videoCoverMilliseconds: 700` (évite l'image du flash).
+
 ## 1. Veille virale (chaque jour, AVANT d'écrire)
 Budget vidIQ : 150 crédits/mois, donc ~5 crédits par jour maximum.
 - Appeler `vidiq_instagram_tiktok_outlier_search` (5 crédits) avec query « GTA 6 » (ou le sujet chaud du jour),
