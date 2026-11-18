@@ -33,6 +33,7 @@ Concepts qui marchent (à adapter, pas à copier mot pour mot) :
 - Meilleur Reel (189 vues, 45,9 % d'abandon, 2,9 % de J'aime) : « 1 h par soir = fini en février » => accroche qui parle au spectateur + calcul concret qui le concerne. **Accroches en « tu / ta / ton »** : « Si tu… », « Ta PS5… », « Ton pote… ».
 - Segment 1 = accroche COMPLÈTE dans "caption" (affichée en grand sur la 1re image, qui sert de couverture ; pas de sous-titres mot à mot sur ce segment). Courte (≤ 7 mots), choc, compréhensible sans le son.
 - Privilégier les sujets qu'on envoie à un pote : mèmes de joueur, défis, « toi vs ton pote », calculs persos.
+- (18.11) Mise en page : textes dans la zone sûre (largeur 840 px, décalés à gauche des boutons Instagram) ; "big" ≤ 8 caractères de préférence (réduit automatiquement sinon) ; sous-titres coupés par groupes de sens.
 ### Règles générales
 - Segment 1 = accroche (jamais d'intro). Dernier segment = question binaire.
 - "big" = un chiffre ou un mot fort (pas d'emoji). "tag" = étiquette de contexte. "caption" = idée clé, *mots dorés*.

@@ -141,11 +141,43 @@ def draw_rich_line(draw, line, fnt, cy):
             parts.append((chunk, gold))
         gold = not gold
     total = sum(draw.textlength(p, font=fnt) for p, _ in parts)
-    x = (W - total) / 2
+    x = SAFE_CX - total / 2
     for p, g in parts:
         draw.text((x, cy), p, font=fnt, fill=GOLD if g else WHITE,
                   stroke_width=6, stroke_fill=(15, 8, 20), anchor="lm")
         x += draw.textlength(p, font=fnt)
+
+
+# Zone sûre Instagram/TikTok : boutons à droite (x > ~930, y ~1050-1650) et texte du post en bas (y > ~1550)
+SAFE_W = 840          # largeur max du texte
+SAFE_CX = 490         # centre horizontal décalé à gauche, loin des boutons
+SUB_Y = 1065          # hauteur des sous-titres mot à mot (au-dessus des boutons, sous le titre)
+LIAISON = {"à", "a", "au", "aux", "de", "du", "des", "le", "la", "les", "l'", "un", "une", "ton", "ta", "tes",
+           "ton", "son", "sa", "ses", "mon", "ma", "mes", "ce", "cet", "cette", "ces", "et", "ou", "en", "sur",
+           "pour", "par", "dans", "qui", "que", "qu'", "ça", "ne", "pas", "plus", "si", "tu", "il", "on", "je",
+           "est", "c'est", "d'", "j'", "t'", "s'", "n'", "avec", "sans", "chez", "très", "trop", "déjà"}
+
+
+def sub_chunks(words, maxw=3, maxc=16):
+    """Découpe les sous-titres en groupes de sens : jamais finir un groupe sur un petit mot de liaison."""
+    out, i, n = [], 0, len(words)
+    while i < n:
+        j, chars = i, 0
+        while j < n and j - i < maxw and chars + len(words[j][0]) <= maxc + (0 if j > i else 99):
+            chars += len(words[j][0]) + 1
+            j += 1
+        lia = lambda k: words[k][0].lower().strip(".,!?") in LIAISON
+        while j - i > 2 and lia(j - 1) and j < n:
+            j -= 1
+        if j - i == 2 and lia(j - 1) and j < n and not lia(i):
+            j -= 1
+        while j < n and all(lia(k) for k in range(i, j)):  # « la » seul : on colle le mot suivant
+            j += 1
+        if j < n and words[j - 1][0].upper().strip(".,!?") == "GTA":  # ne jamais couper « GTA 6 »
+            j += 1
+        out.append((i, j))
+        i = j
+    return out
 
 
 def frame(base, seg, t, words=None):
@@ -165,8 +197,12 @@ def frame(base, seg, t, words=None):
     if seg.get("big"):
         size = int((260 if len(seg["big"]) <= 6 else 150) * (0.7 + 0.3 * ease))
         f = font(F_SERIF, size)
-        lines = wrap(d, seg["big"], f, W - 120)
-        y = 620 - (len(lines) - 1) * size * 0.55
+        tw = d.textlength(seg["big"], font=f)
+        if tw > SAFE_W:  # trop large : on réduit (toujours sur une seule ligne)
+            size = int(size * SAFE_W / tw)
+            f = font(F_SERIF, size)
+        lines = [seg["big"]]
+        y = 560 - (len(lines) - 1) * size * 0.55
         for ln in lines:
             d.text((W / 2, y), ln, font=f, fill=GOLD, anchor="mm",
                    stroke_width=4, stroke_fill=(15, 8, 20))
@@ -179,32 +215,36 @@ def frame(base, seg, t, words=None):
         for i, chunk in enumerate(seg["caption"].split("*")):
             for w in chunk.split():
                 toks.append(f"*{w}*" if i % 2 else w)
-        lines = wrap(d, " ".join(toks), f, W - 140)
+        lines = wrap(d, " ".join(toks), f, SAFE_W)
         lines = [ln.replace("* *", " ") for ln in lines]
         lh = 120 if first else 90
-        y0 = (1150 if first else 880) - (len(lines) - 1) * lh // 2 + (0 if first else int((1 - ease) * 30))
+        y0 = (1150 if first else 810) - (len(lines) - 1) * lh // 2 + (0 if first else int((1 - ease) * 30))
         for i, ln in enumerate(lines):
             draw_rich_line(d, ln, f, y0 + i * lh)
 
     # sous-titres mot à mot (2-3 mots, mot prononcé en surbrillance, effet « pop »)
     if words and not first:
+        chunks = sub_chunks(words)
         cur = max([i for i, (_, a, _) in enumerate(words) if a <= t] or [0])
-        c0 = (cur // 3) * 3
-        chunk = words[c0:c0 + 3]
+        c0, c1 = next((a, b) for a, b in chunks if a <= cur < b)
+        chunk = words[c0:c1]
         since = t - chunk[0][1]
         sc = 1.12 - 0.12 * min(1.0, max(0.0, since) / 0.09)
-        f = font(F_BLACK, int(104 * sc))
-        widths = [d.textlength(w.upper() + " ", font=f) for w, _, _ in chunk]
-        tot_w = sum(widths) - d.textlength(" ", font=f)
-        if tot_w > W - 90:  # mots longs (ex. QUATRE-VINGTS) : on réduit pour ne pas déborder
-            f = font(F_BLACK, max(40, int(104 * sc * (W - 90) / tot_w)))
-            widths = [d.textlength(w.upper() + " ", font=f) for w, _, _ in chunk]
-        x = (W - sum(widths) + d.textlength(" ", font=f)) / 2
+        f = font(F_BLACK, int(96 * sc))
+        sp = d.textlength(" ", font=f)
+        widths = [d.textlength(w.upper(), font=f) for w, _, _ in chunk]
+        tot_w = sum(widths) + sp * (len(chunk) - 1)
+        if tot_w > SAFE_W:
+            f = font(F_BLACK, max(44, int(96 * sc * SAFE_W / tot_w)))
+            sp = d.textlength(" ", font=f)
+            widths = [d.textlength(w.upper(), font=f) for w, _, _ in chunk]
+            tot_w = sum(widths) + sp * (len(chunk) - 1)
+        x = SAFE_CX - tot_w / 2
         for j, (w, a, b) in enumerate(chunk):
             on = (c0 + j) == cur
-            d.text((x, 1360), w.upper(), font=f, anchor="lm", fill=(255, 225, 40) if on else WHITE,
+            d.text((x, SUB_Y), w.upper(), font=f, anchor="lm", fill=(255, 225, 40) if on else WHITE,
                    stroke_width=9, stroke_fill=(10, 4, 16))
-            x += widths[j]
+            x += widths[j] + sp
 
     # barre de progression en bas
     return im
