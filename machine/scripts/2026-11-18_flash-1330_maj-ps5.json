@@ -1,0 +1,31 @@
+{
+ "voice": "chatterbox:none",
+ "broll": true,
+ "segments": [
+  {
+   "say": "Ta PS5 doit faire une mise à jour pour jouer à GTA 6 !",
+   "caption": "GTA 6 : ta PS5 doit faire *une mise à jour*",
+   "tag": "OFFICIEL"
+  },
+  {
+   "say": "Envoie ça à ton pote qui veut lancer le jeu à minuit pile.",
+   "caption": "Envoie ça à *ton pote*",
+   "tag": "ENVOIE À UN POTE"
+  },
+  {
+   "say": "Sony l'a confirmé : elle est obligatoire avant de jouer.",
+   "caption": "*Obligatoire* avant de jouer",
+   "big": "SONY"
+  },
+  {
+   "say": "Installe-la avant ce soir, pour ne pas attendre à minuit.",
+   "caption": "Installe-la *avant ce soir*",
+   "big": "MAJ"
+  },
+  {
+   "say": "Alors, ta console est déjà à jour ?",
+   "caption": "Ta console est *déjà à jour* ?",
+   "big": "?"
+  }
+ ]
+}
