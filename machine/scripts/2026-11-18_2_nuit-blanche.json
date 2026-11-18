@@ -1,0 +1,42 @@
+{
+ "voice": "chatterbox:none",
+ "broll": true,
+ "segments": [
+  {
+   "say": "Cette nuit, ton sommeil est officiellement annulé.",
+   "caption": "Ton sommeil est *annulé*",
+   "tag": "CETTE NUIT",
+   "big": "00:00"
+  },
+  {
+   "say": "Envoie ça à ton pote qui a mis trois réveils.",
+   "caption": "Envoie ça à *ton pote*",
+   "tag": "ENVOIE À UN POTE"
+  },
+  {
+   "say": "Le jeu se débloque à minuit pile sur PS5.",
+   "caption": "Minuit pile *sur PS5*",
+   "big": "PS5"
+  },
+  {
+   "say": "Sony parle d'une demande sans précédent.",
+   "caption": "Demande *sans précédent*",
+   "tag": "SONY"
+  },
+  {
+   "say": "C'est le jeu le plus précommandé de l'histoire du PlayStation Store.",
+   "caption": "Record de *précommandes*",
+   "big": "RECORD"
+  },
+  {
+   "say": "Manette chargée, café prêt.",
+   "caption": "Manette chargée. *Café prêt.*",
+   "big": "CAFÉ"
+  },
+  {
+   "say": "Toi, tu lances le jeu à minuit, ou tu dors ?",
+   "caption": "Minuit ou *dodo* ?",
+   "big": "?"
+  }
+ ]
+}

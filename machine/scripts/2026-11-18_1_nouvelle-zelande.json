@@ -1,0 +1,38 @@
+{
+ "voice": "chatterbox:none",
+ "broll": true,
+ "segments": [
+  {
+   "say": "Pendant que tu manges à midi, eux jouent déjà à GTA 6.",
+   "caption": "Tu manges. *Eux* jouent à GTA 6.",
+   "tag": "AUJOURD'HUI",
+   "big": "12:00"
+  },
+  {
+   "say": "Envoie ça à ton pote qui veut déménager en Nouvelle-Zélande.",
+   "caption": "Envoie ça à *ton pote*",
+   "tag": "ENVOIE À UN POTE"
+  },
+  {
+   "say": "Selon les données du PlayStation Store, le jeu se débloque d'abord en Nouvelle-Zélande.",
+   "caption": "1er pays : la *Nouvelle-Zélande*",
+   "tag": "SELON LE PS STORE",
+   "big": "NZ"
+  },
+  {
+   "say": "Là-bas, il est déjà minuit quand il est midi en Suisse.",
+   "caption": "Minuit là-bas = *midi* chez nous",
+   "big": "+12 h"
+  },
+  {
+   "say": "Chez nous, il faudra attendre minuit pile.",
+   "caption": "Suisse et France : *minuit*",
+   "big": "00:00"
+  },
+  {
+   "say": "Toi, tu restes debout cette nuit, ou tu joues demain matin ?",
+   "caption": "Cette nuit ou *demain* ?",
+   "big": "?"
+  }
+ ]
+}
