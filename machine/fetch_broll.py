@@ -10,7 +10,7 @@ OUT = os.path.join(HERE, "broll")
 QUERIES = ["miami night", "miami beach", "miami skyline", "neon city night", "police car lights",
            "sports car night", "palm trees sunset", "florida swamp", "speedboat ocean", "highway night drive",
            "nightclub lights", "money cash", "city traffic night aerial", "sunset beach drone", "helicopter city"]
-BLOCKED = {15936, 253387, 253388, 239125, 205875, 16045, 1295, 2946, 190482, 24603, 253425, 253426, 2860, 7315, 80724, 8675, 110933, 253391, 31956, 37283, 137765, 16046, 114445, 135480, 180386}  # clips refusés après vérification visuelle (hors sujet ou personnes)
+BLOCKED = {106379, 142997, 1651, 181376, 187690, 37253, 39183, 45283, 57179, 57181, 65390, 6970, 7686, 11722, 212404, 16931, 81185, 16160, 283428, 15936, 253387, 253388, 239125, 205875, 16045, 1295, 2946, 190482, 24603, 253425, 253426, 2860, 7315, 80724, 8675, 110933, 253391, 31956, 37283, 137765, 16046, 114445, 135480, 180386}  # clips refusés après vérification visuelle (hors sujet ou personnes)
 BAD = re.compile(r"\b(blood|weapon|gun|accident|crash|funeral|war|protest|injur|dead|death|kid|child)\b", re.I)
 
 
@@ -21,11 +21,22 @@ def key():
     return k
 
 
-def main(n=3):
+FACES = ["shocked man", "surprised woman", "man laughing", "woman laughing", "excited man celebrating",
+         "tired man office", "yawning man", "man screaming excited", "woman shocked phone", "man disappointed",
+         "gamer playing video game", "man playing console", "friends cheering", "woman celebrating", "man waking up alarm"]
+ACTION = ["car drifting", "night drive fast", "police lights night", "sports car speed", "neon lights", "fireworks night",
+          "motorcycle night", "speedboat fast", "city timelapse night", "lightning storm"]
+
+
+def main(n=3, queries=None, out=None):
+    global OUT
+    if out:
+        OUT = out
+    queries = queries or QUERIES
     os.makedirs(OUT, exist_ok=True)
     k = key()
     have = set(os.listdir(OUT))
-    for q in QUERIES:
+    for q in queries:
         url = "https://pixabay.com/api/videos/?" + urllib.parse.urlencode(
             dict(key=k, q=q, per_page=20, safesearch="true", video_type="film"))
         try:
@@ -63,4 +74,15 @@ def main(n=3):
 
 
 if __name__ == "__main__":
-    main(int(sys.argv[1]) if len(sys.argv) > 1 else 3)
+    # python3 fetch_broll.py 3            -> ambiance (broll/)
+    # python3 fetch_broll.py 2 faces      -> vraies réactions humaines (broll/faces/), pour l'accroche
+    # python3 fetch_broll.py 2 action     -> plans très dynamiques (broll/), pour la 1re seconde
+    n = int(sys.argv[1]) if len(sys.argv) > 1 else 3
+    kind = sys.argv[2] if len(sys.argv) > 2 else ""
+    if kind == "faces":
+        main(n, FACES, os.path.join(HERE, "broll", "faces"))
+    elif kind == "action":
+        main(n, ACTION)
+    else:
+        main(n)
+    subprocess.run([sys.executable, os.path.join(HERE, "motion_score.py")])

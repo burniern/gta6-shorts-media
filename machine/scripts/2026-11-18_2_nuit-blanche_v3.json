@@ -1,0 +1,71 @@
+{
+ "voice": "none",
+ "broll": true,
+ "face": "alarm",
+ "chat_name": "Kevin",
+ "segments": [
+  {
+   "say": "x",
+   "caption": "Toi et ton pote *cette nuit*",
+   "tag": "23:59",
+   "dur": 1.8
+  },
+  {
+   "say": "x",
+   "chat": [
+    [
+     "lui",
+     "Frère t'es réveillé ?"
+    ]
+   ],
+   "dur": 1.4
+  },
+  {
+   "say": "x",
+   "chat": [
+    [
+     "moi",
+     "Évidemment. Manette chargée."
+    ]
+   ],
+   "dur": 1.6
+  },
+  {
+   "say": "x",
+   "chat": [
+    [
+     "lui",
+     "Et demain t'as boulot ?"
+    ]
+   ],
+   "dur": 1.4
+  },
+  {
+   "say": "x",
+   "chat": [
+    [
+     "moi",
+     "J'ai posé congé il y a 3 mois"
+    ]
+   ],
+   "dur": 1.7
+  },
+  {
+   "say": "x",
+   "chat": [
+    [
+     "lui",
+     "Moi j'ai dit que j'étais malade"
+    ]
+   ],
+   "dur": 1.9
+  },
+  {
+   "say": "x",
+   "caption": "*Tague* ton Kevin",
+   "tag": "TAGUE-LE",
+   "big": "00:00",
+   "dur": 2.0
+  }
+ ]
+}

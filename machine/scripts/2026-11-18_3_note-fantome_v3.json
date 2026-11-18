@@ -1,0 +1,33 @@
+{
+ "voice": "chatterbox:none",
+ "broll": true,
+ "segments": [
+  {
+   "say": "Tu as vu ? GTA 6 a déjà une note. Sans être sorti.",
+   "caption": "Tu as vu *la note* de GTA 6 ?",
+   "tag": "METACRITIC",
+   "big": "6,5"
+  },
+  {
+   "say": "Lundi, les joueurs sur PS5 lui donnaient six et demi sur dix.",
+   "caption": "*6,5/10* côté joueurs",
+   "big": "6,5/10"
+  },
+  {
+   "say": "Avec seulement cinq avis.",
+   "caption": "Seulement *5 avis*",
+   "big": "5"
+  },
+  {
+   "say": "Les tests de la presse sont attendus juste avant la sortie.",
+   "caption": "Les vrais tests : *bientôt*",
+   "tag": "PRESSE"
+  },
+  {
+   "say": "Toi, tu crois les notes, ou ton propre avis ?",
+   "caption": "Les notes ou *ton avis* ?",
+   "big": "?"
+  }
+ ],
+ "face": "phone"
+}

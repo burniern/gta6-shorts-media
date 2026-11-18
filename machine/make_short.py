@@ -212,21 +212,26 @@ def frame(base, seg, t, words=None):
             y += size * 1.1
 
     first = seg.get("_first")
-    if seg.get("caption"):
-        f = font(F_BLACK, 100 if first else 72)  # 1er plan = accroche complète (sert aussi de couverture)
+    if seg.get("chat") is not None:
+        draw_chat(im, d, seg, t)
+    if seg.get("caption") and not (seg.get("chat") and not first):
+        slam = 1.0
+        if first:  # l'accroche arrive en « claque » (1,35 -> 1) : mouvement dès la 1re image
+            slam = 1.0 + 0.35 * (1 - min(1.0, t / 0.16)) ** 2
+        f = font(F_BLACK, int((100 if first else 72) * slam))  # 1er plan = accroche complète (sert aussi de couverture)
         toks = []
         for i, chunk in enumerate(seg["caption"].split("*")):
             for w in chunk.split():
                 toks.append(f"*{w}*" if i % 2 else w)
         lines = wrap(d, " ".join(toks), f, SAFE_W)
         lines = [ln.replace("* *", " ") for ln in lines]
-        lh = 120 if first else 90
+        lh = int((120 if first else 90) * slam)
         y0 = (1150 if first else 810) - (len(lines) - 1) * lh // 2 + (0 if first else int((1 - ease) * 30))
         for i, ln in enumerate(lines):
             draw_rich_line(d, ln, f, y0 + i * lh)
 
     # sous-titres mot à mot (2-3 mots, mot prononcé en surbrillance, effet « pop »)
-    if words and not first:
+    if words and not first and not seg.get("chat") and not seg.get("_mute"):
         chunks = sub_chunks(words)
         cur = max([i for i, (_, a, _) in enumerate(words) if a <= t] or [0])
         c0, c1 = next((a, b) for a, b in chunks if a <= cur < b)
@@ -251,6 +256,62 @@ def frame(base, seg, t, words=None):
 
     # barre de progression en bas
     return im
+
+
+CHAT_ME, CHAT_HIM = (40, 120, 255), (58, 58, 66)
+
+
+def draw_chat(im, d, seg, t):
+    """Fausse conversation entre deux potes inventés. seg['chat'] = messages déjà affichés + nouveaux
+    (liste de ["moi"|"lui", "texte"]) ; seg['_new'] = nb de nouveaux messages qui apparaissent dans ce plan."""
+    msgs = seg["chat"]
+    new = seg.get("_new", len(msgs))
+    f = font(F_BLACK, 64)
+    x0, x1 = 50, 930
+    # fond sombre derrière toute la conversation (lisible sur n'importe quelle vidéo)
+    ov = Image.new("RGBA", (W, H))
+    ImageDraw.Draw(ov).rounded_rectangle([x0 - 20, 230, x1 + 20, 1520], radius=50, fill=(8, 6, 14, 190))
+    im.paste(Image.alpha_composite(im.convert("RGBA"), ov).convert("RGB"))
+    d = ImageDraw.Draw(im)
+    # en-tête façon messagerie
+    d.rounded_rectangle([x0, 250, x1, 360], radius=30, fill=(24, 24, 30))
+    d.ellipse([x0 + 25, 270, x0 + 95, 340], fill=PINK)
+    d.text((x0 + 60, 305), seg.get("_who", "K")[0].upper(), font=font(F_BLACK, 40), fill=WHITE, anchor="mm")
+    d.text((x0 + 120, 305), seg.get("_who", "Kevin"), font=font(F_BLACK, 46), fill=WHITE, anchor="lm")
+    bubbles, y = [], 0
+    for i, (who, txt) in enumerate(msgs):
+        txt = re.sub(r"[^\w\s.,!?'’:;()«»…%€$+\-/]", "", txt).strip()
+        lines = wrap(d, txt, f, 640)
+        h = 44 + 78 * len(lines)
+        bubbles.append((who, lines, h, i >= len(msgs) - new))
+    # n'afficher que ce qui tient entre y=400 et y=1500 (les plus récents en bas)
+    total, keep = 0, []
+    for b in reversed(bubbles):
+        if total + b[2] + 24 > 1100:
+            break
+        keep.insert(0, b)
+        total += b[2] + 24
+    y = 400
+    nshown = 0
+    for who, lines, h, is_new in keep:
+        if is_new:
+            idx = sum(1 for k in keep if k[3] and keep.index(k) < keep.index((who, lines, h, is_new)))
+            appear = t - idx * 0.9  # les nouveaux messages arrivent l'un après l'autre
+            if appear < 0:
+                continue
+            sc = min(1.0, appear / 0.15)
+        else:
+            sc = 1.0
+        wmax = max(d.textlength(ln.replace("*", ""), font=f) for ln in lines)
+        bw = wmax + 64
+        me = who == "moi"
+        bx = x1 - bw if me else x0
+        oy = int((1 - sc) * 40)
+        d.rounded_rectangle([bx, y + oy, bx + bw, y + h + oy], radius=34, fill=CHAT_ME if me else CHAT_HIM)
+        for j, ln in enumerate(lines):
+            d.text((bx + 32, y + oy + 22 + 39 + 78 * j), ln.replace("*", ""), font=f, fill=WHITE, anchor="lm")
+        y += h + 24
+        nshown += 1
 
 
 def tts(text, voice, out):
@@ -285,6 +346,14 @@ def main(script_path, out_path):
             shutil.copy(seg_cache[i], p)
     missing = [i for i in range(len(raw)) if not os.path.exists(seg_cache[i])]
     print(f"voix en cache : {len(raw) - len(missing)}/{len(raw)} phrases", flush=True)
+    if voice == "none":  # vidéo sans voix : texte + musique, durée fixée par plan
+        for i in range(len(raw)):
+            seg = cfg["segments"][i]
+            dur = seg.get("dur", max(1.4, 0.065 * len(seg.get("caption", seg["say"]))))
+            subprocess.run(["ffmpeg", "-v", "error", "-y", "-f", "lavfi", "-i", "anullsrc=r=24000:cl=mono",
+                            "-t", f"{dur:.2f}", raw[i]], check=True)
+        missing = []
+        seg_cache = [os.path.join(tmp, f"nc{i}.wav") for i in range(len(raw))]
     if not missing:
         pass
     elif voice.startswith("chatterbox:"):  # voix expressive, modèle chargé une fois
@@ -321,7 +390,7 @@ def main(script_path, out_path):
     for i, p in enumerate(raw):
         q = os.path.join(tmp, f"a{i:03d}.wav")
         subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", p, "-ar", "24000", "-ac", "1",
-                        "-af", "silenceremove=start_periods=1:start_threshold=-45dB,"
+                        "-af", "anull" if voice == "none" else "silenceremove=start_periods=1:start_threshold=-45dB,"
                                "areverse,silenceremove=start_periods=1:start_threshold=-45dB,areverse,"
                                "apad=pad_dur=0.12", q], check=True)
         with wave.open(q) as w:
@@ -344,16 +413,89 @@ def main(script_path, out_path):
     progress_h = 12
     # vidéos d'ambiance libres de droits (broll/), une par segment, assombries sous le texte
     import glob as _glob, random as _rnd
-    clips = sorted(_glob.glob(os.path.join(HERE, "broll", "*.mp4"))) if cfg.get("broll") else []
+    # b-roll : les clips qui bougent le plus d'abord (broll/MOTION.json), un nouveau plan toutes les ~1,7 s
     _rnd.seed(script_path)
-    _rnd.shuffle(clips)
+    motion = {}
+    mpath = os.path.join(HERE, "broll", "MOTION.json")
+    if os.path.exists(mpath):
+        motion = json.load(open(mpath))
+    clips = sorted(_glob.glob(os.path.join(HERE, "broll", "*.mp4"))) if cfg.get("broll") else []
+    clips.sort(key=lambda p: -motion.get(os.path.basename(p), 0) + _rnd.random() * 3)
+    dynamic = clips[: max(4, len(clips) * 2 // 3)]  # on écarte le tiers le plus statique
+    _rnd.shuffle(dynamic)
+    faces = sorted(_glob.glob(os.path.join(HERE, "broll", "faces", "*.mp4")))
+    face_idx = {}
+    if os.path.exists(os.path.join(HERE, "broll", "faces", "INDEX.txt")):
+        for ln in open(os.path.join(HERE, "broll", "faces", "INDEX.txt")):
+            parts = ln.split(" | ")
+            face_idx[parts[0]] = (parts[1] + " " + parts[2]).lower()
+    want = cfg.get("face")  # ex. "shocked" / "laughing" / "tired" : vraie réaction humaine sur l'accroche
+    face_clip = None
+    if want and faces:
+        good = [p for p in faces if want.lower() in face_idx.get(os.path.basename(p), "")]
+        face_clip = _rnd.choice(good or faces)
+    opener = clips[0] if clips else None  # le plus dynamique ouvre la vidéo
+    if cfg.get("opener"):  # ex. "fireworks", "drift", "police" : mot-clé cherché dans broll/INDEX.txt
+        idx = open(os.path.join(HERE, "broll", "INDEX.txt")).read().lower().splitlines()
+        hits = [os.path.join(HERE, "broll", ln.split(" | ")[0]) for ln in idx if cfg["opener"].lower() in ln]
+        hits = [h for h in hits if os.path.exists(h)]
+        if hits:
+            opener = _rnd.choice(hits)
     shade = Image.new("RGBA", (W, H))
     sd = ImageDraw.Draw(shade)
     for y in range(H):  # voile sombre, plus dense au centre (zone texte)
         a = int(55 + 110 * math.exp(-((y - 1100) / 520) ** 2))
         sd.line([(0, y), (W, y)], fill=(18, 8, 26, a))
+    if voice == "none":
+        for seg in cfg["segments"]:
+            seg["_mute"] = True
     cfg["segments"][0]["_first"] = True  # pas de sous-titres mot à mot sur l'accroche
+    # conversation : chaque plan affiche les messages précédents + les siens
+    hist = []
+    for seg in cfg["segments"]:
+        if seg.get("chat") is not None:
+            seg["_new"] = len(seg["chat"])
+            hist = hist + [list(m) for m in seg["chat"]]
+            seg["chat"] = list(hist)
+            seg["_who"] = cfg.get("chat_name", "Kevin")
+    SHOT = cfg.get("shot", 1.7)
+    shots = []  # (début, fin, clip)
+    t_acc, pool_i = 0.0, 0
+    cut_times = set()
+    for si, dur in enumerate(durs):
+        a = t_acc
+        while a < t_acc + dur - 0.05:
+            b = min(t_acc + dur, a + SHOT)
+            if t_acc + dur - b < 0.6:
+                b = t_acc + dur
+            if si == 0 and a == 0 and (face_clip or opener):
+                c = face_clip or opener
+            else:
+                c = dynamic[pool_i % len(dynamic)] if dynamic else None
+                pool_i += 1
+            shots.append((a, b, c))
+            cut_times.add(round(a * FPS))
+            a = b
+        t_acc += dur
+    shot_frames = {}
+    for j, (a, b, c) in enumerate(shots):
+        if not c:
+            continue
+        bdir = os.path.join(tmp, f"b{j:03d}")
+        os.makedirs(bdir)
+        off = 1.0 + _rnd.random() * 3
+        subprocess.run(["ffmpeg", "-v", "error", "-y", "-ss", f"{off:.2f}", "-stream_loop", "-1", "-i", c, "-t", f"{b - a + 0.1:.2f}",
+                        "-vf", f"scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},fps={FPS}",
+                        "-q:v", "4", os.path.join(bdir, "%05d.jpg")], check=True)
+        shot_frames[j] = (round(a * FPS), bdir, len(os.listdir(bdir)))
+    def bg_at(n):
+        for j, (a, b, c) in enumerate(shots):
+            if round(a * FPS) <= n < round(b * FPS) and j in shot_frames:
+                f0, bdir, cnt = shot_frames[j]
+                return os.path.join(bdir, f"{min(n - f0 + 1, cnt):05d}.jpg"), n - f0
+        return None, n
     seg_starts = []
+    rng_shake = _rnd.Random(7)
     for si, (seg, dur) in enumerate(zip(cfg["segments"], durs)):
         nf = max(1, round(dur * FPS))
         seg_starts.append(t_start)
@@ -366,24 +508,27 @@ def main(script_path, out_path):
             a = acc / tot * speak
             acc += len(w) + 2
             words.append((w, a, acc / tot * speak))
-        bdir = None
-        if clips:
-            bdir = os.path.join(tmp, f"b{si:03d}")
-            os.makedirs(bdir)
-            src = clips[si % len(clips)]
-            subprocess.run(["ffmpeg", "-v", "error", "-y", "-ss", "1.0", "-stream_loop", "-1", "-i", src, "-t", f"{dur:.2f}",
-                            "-vf", f"scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},fps={FPS}",
-                            "-q:v", "4", os.path.join(bdir, "%05d.jpg")], check=True)
         for k in range(nf):
             b = synthwave(n) if cfg.get("style", "synthwave") == "synthwave" else base
-            if bdir:
-                bf = os.path.join(bdir, f"{min(k + 1, len(os.listdir(bdir))):05d}.jpg")
+            bf, ks = bg_at(n)
+            if bf:
                 b = Image.alpha_composite(Image.open(bf).convert("RGBA"), shade).convert("RGB")
-            z = 1.0 + 0.07 * (k / max(1, nf))  # zoom lent continu
-            if z > 1.0:
-                bw, bh = int(W * z), int(H * z)
-                b = b.resize((bw, bh), Image.BILINEAR).crop(((bw - W) // 2, (bh - H) // 2, (bw - W) // 2 + W, (bh - H) // 2 + H))
+            # zoom : « punch » 1,12 -> 1,0 à chaque nouveau plan, puis zoom lent
+            z = 1.0 + 0.05 * (ks / (SHOT * FPS)) + 0.14 * max(0.0, 1 - ks / 6) ** 2
+            if n < 3:
+                z += 0.12 * (1 - n / 3)
+            bw, bh = int(W * z), int(H * z)
+            dx = dy = 0
+            if n < 10:  # léger tremblement à l'ouverture
+                amp = 14 * (1 - n / 10)
+                dx, dy = int(rng_shake.uniform(-amp, amp)), int(rng_shake.uniform(-amp, amp))
+            b = b.resize((bw, bh), Image.BILINEAR)
+            cx0 = max(0, min(bw - W, (bw - W) // 2 + dx))
+            cy0 = max(0, min(bh - H, (bh - H) // 2 + dy))
+            b = b.crop((cx0, cy0, cx0 + W, cy0 + H))
             im = frame(b, seg, k / FPS, words)
+            if n < 5:  # flash blanc d'ouverture
+                im = Image.blend(im, Image.new("RGB", (W, H), WHITE), 0.55 * (1 - n / 5))
             d = ImageDraw.Draw(im)
             prog = (t_start + k / FPS) / total
             d.rectangle([0, H - progress_h, int(W * prog), H], fill=GOLD)
@@ -410,6 +555,10 @@ def main(script_path, out_path):
         impact = (np.sin(2 * np.pi * (90 - 50 * ti) * ti) * np.exp(-ti * 9)).astype(np.float32) * 0.7
         tp = np.arange(int(0.08 * sr)) / sr
         pop = (np.sin(2 * np.pi * (900 - 2500 * tp) * tp) * np.exp(-tp * 45)).astype(np.float32) * 0.35
+        for ct in sorted(cut_times):
+            if ct:
+                put(whoosh * 0.6, ct / FPS - 0.12)
+        put(impact * 0.8, 0.0)  # impact dès la 1re image
         for si, seg in enumerate(cfg["segments"]):
             t0 = seg_starts[si]
             if si:

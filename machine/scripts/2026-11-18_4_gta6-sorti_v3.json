@@ -1,0 +1,33 @@
+{
+ "voice": "chatterbox:none",
+ "broll": true,
+ "segments": [
+  {
+   "say": "Ça y est, GTA 6 est sorti. Fonce !",
+   "caption": "GTA 6 est sorti. *Fonce.*",
+   "tag": "C'EST PARTI",
+   "big": "00:00"
+  },
+  {
+   "say": "Le jeu est disponible sur PS5 et Xbox Series.",
+   "caption": "*PS5* et *Xbox Series*",
+   "big": "19.11"
+  },
+  {
+   "say": "Direction Vice City, avec Jason et Lucia.",
+   "caption": "Vice City, *Jason et Lucia*",
+   "big": "VICE CITY"
+  },
+  {
+   "say": "Sur PC, il faudra encore attendre.",
+   "caption": "PC : *pas encore*",
+   "big": "PC ?"
+  },
+  {
+   "say": "Toi, tu y joues déjà, ou tu attends demain ?",
+   "caption": "Déjà dessus ou *demain* ?",
+   "big": "?"
+  }
+ ],
+ "opener": "fireworks"
+}
