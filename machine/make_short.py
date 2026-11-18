@@ -155,7 +155,8 @@ SUB_Y = 1065          # hauteur des sous-titres mot à mot (au-dessus des bouton
 LIAISON = {"à", "a", "au", "aux", "de", "du", "des", "le", "la", "les", "l'", "un", "une", "ton", "ta", "tes",
            "ton", "son", "sa", "ses", "mon", "ma", "mes", "ce", "cet", "cette", "ces", "et", "ou", "en", "sur",
            "pour", "par", "dans", "qui", "que", "qu'", "ça", "ne", "pas", "plus", "si", "tu", "il", "on", "je",
-           "est", "c'est", "d'", "j'", "t'", "s'", "n'", "avec", "sans", "chez", "très", "trop", "déjà"}
+           "est", "c'est", "d'", "j'", "t'", "s'", "n'", "avec", "sans", "chez", "très", "trop", "déjà",
+           "se", "me", "te", "y", "lui", "leur", "nous", "vous", "va", "vont", "sont", "ont"}
 
 
 def sub_chunks(words, maxw=3, maxc=16):
