@@ -1,0 +1,36 @@
+{
+ "voice": "chatterbox:none",
+ "broll": true,
+ "segments": [
+  {
+   "say": "GTA 6 n'est même pas sorti, et il est déjà nommé jeu de l'année.",
+   "caption": "Pas sorti. Déjà nommé *jeu de l'année*",
+   "tag": "OFFICIEL"
+  },
+  {
+   "say": "Envoie ça à ton pote qui doutait du jeu.",
+   "caption": "Envoie ça à *ton pote*",
+   "tag": "ENVOIE À UN POTE"
+  },
+  {
+   "say": "Aux Game Awards, les Oscars du jeu vidéo, il décroche huit nominations.",
+   "caption": "*8 nominations* aux Game Awards",
+   "big": "8"
+  },
+  {
+   "say": "C'est le jeu le plus nommé de l'année.",
+   "caption": "Le jeu *le plus nommé*",
+   "big": "N°1"
+  },
+  {
+   "say": "Le gagnant sera connu le dix décembre.",
+   "caption": "Gagnant connu le *10 décembre*",
+   "big": "10.12"
+  },
+  {
+   "say": "Toi, il mérite le titre, ou c'est trop tôt ?",
+   "caption": "Il le mérite, ou *trop tôt* ?",
+   "big": "?"
+  }
+ ]
+}
