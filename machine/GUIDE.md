@@ -34,6 +34,15 @@ Concepts qui marchent (à adapter, pas à copier mot pour mot) :
 - Segment 1 = accroche COMPLÈTE dans "caption" (affichée en grand sur la 1re image, qui sert de couverture ; pas de sous-titres mot à mot sur ce segment). Courte (≤ 7 mots), choc, compréhensible sans le son.
 - Privilégier les sujets qu'on envoie à un pote : mèmes de joueur, défis, « toi vs ton pote », calculs persos.
 - (18.11) Mise en page : textes dans la zone sûre (largeur 840 px, décalés à gauche des boutons Instagram) ; "big" ≤ 8 caractères de préférence (réduit automatiquement sinon) ; sous-titres coupés par groupes de sens.
+### Algorithme des Reels (recherche du 18.11.2026, sources : déclarations d'Adam Mosseri, Buffer, Metricool, SocialPilot)
+- Les 3 signaux n°1 confirmés : **durée de visionnage** (y compris revisionnages), **partages en message privé par personne touchée**, **J'aime par personne touchée**. Les partages comptent le plus pour toucher des non-abonnés (notre cas : 100 % non-abonnés au début) et plus que les commentaires.
+- **Le 1er test se joue sur 1,5-3 s** : jusqu'à la moitié des gens partent avant 3 s. Accroche à la fois écrite ET dite dès la 1re seconde, image qui bouge dès la 1re seconde (jamais d'écran fixe ou noir), pas de silence.
+- **Boucle** : la dernière phrase doit renvoyer à l'accroche (ex. accroche « Ton sommeil est annulé » → fin « …alors, tu dors ou pas ? ») pour que la vidéo se relance naturellement et compte des revisionnages.
+- **S'arrêter dès que l'idée est livrée** : pas de phrase de remplissage. 12-18 s reste notre cible (le créneau 15-30 s est donné comme le meilleur en général ; nos stats montrent ~8 s de visionnage moyen).
+- **Originalité** : Instagram pénalise les reposts et filigranes (jusqu'à exclure des recommandations les comptes qui republient) et favorise le contenu original. Nos vidéos sont originales (voix, texte, montage), garder 100 % de création propre ; ne jamais reposter une vidéo d'ailleurs.
+- **Description** : 1re ligne = la même accroche que la vidéo, avec les mots-clés que les gens tapent (« GTA 6 », « date de sortie », « astuces GTA 6 ») ; 3 à 7 hashtags ciblés ; remplir mediaAltText (Metricool) avec une phrase descriptive contenant les mots-clés (aide la recherche Instagram).
+- **Rester dans la niche GTA 6** : la cohérence du compte aide l'algorithme à savoir à qui montrer nos Reels.
+- Programmer via Metricool ne nuit pas à la portée (Mosseri programme lui-même ses posts).
 ### Règles générales
 - Segment 1 = accroche (jamais d'intro). Dernier segment = question binaire.
 - "big" = un chiffre ou un mot fort (pas d'emoji). "tag" = étiquette de contexte. "caption" = idée clé, *mots dorés*.

@@ -119,7 +119,9 @@ def synthwave(k):
 
 
 def wrap(draw, text, fnt, maxw):
-    words, lines, cur = text.split(), [], ""
+    text = re.sub(r"\*GTA\* \*(\d)\*", "*GTA\u00a0\\1*", text)
+    text = re.sub(r"\bGTA (\d)", "GTA\u00a0\\1", text)  # ne jamais couper « GTA 6 »
+    words, lines, cur = text.split(" "), [], ""
     for w in words:
         test = (cur + " " + w).strip()
         if draw.textlength(test.replace("*", ""), font=fnt) <= maxw:
@@ -369,7 +371,7 @@ def main(script_path, out_path):
             bdir = os.path.join(tmp, f"b{si:03d}")
             os.makedirs(bdir)
             src = clips[si % len(clips)]
-            subprocess.run(["ffmpeg", "-v", "error", "-y", "-stream_loop", "-1", "-i", src, "-t", f"{dur:.2f}",
+            subprocess.run(["ffmpeg", "-v", "error", "-y", "-ss", "1.0", "-stream_loop", "-1", "-i", src, "-t", f"{dur:.2f}",
                             "-vf", f"scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},fps={FPS}",
                             "-q:v", "4", os.path.join(bdir, "%05d.jpg")], check=True)
         for k in range(nf):

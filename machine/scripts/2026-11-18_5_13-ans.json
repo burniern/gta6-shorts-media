@@ -1,0 +1,8 @@
+{"voice": "chatterbox:none", "broll": true, "segments": [
+ {"say": "Si t'es né le jour de la sortie de GTA 5... t'as treize ans.", "caption": "Né le jour de *GTA 5* ? T'as 13 ans.", "tag": "COUP DE VIEUX", "big": "2013"},
+ {"say": "Envoie ça à ton pote qui attend depuis le collège.", "caption": "Envoie ça à *ton pote*", "tag": "ENVOIE À UN POTE"},
+ {"say": "GTA 5 est sorti le dix-sept septembre deux mille treize.", "caption": "GTA 5 : *17.09.2013*", "big": "17.09"},
+ {"say": "Ça fait plus de treize ans d'attente.", "caption": "Plus de *13 ans* d'attente", "big": "13 ANS"},
+ {"say": "Et cette nuit, c'est enfin fini.", "caption": "Cette nuit : *c'est fini*", "big": "00:00"},
+ {"say": "Toi, t'avais quel âge en deux mille treize ?", "caption": "T'avais *quel âge* en 2013 ?", "big": "?"}
+]}
