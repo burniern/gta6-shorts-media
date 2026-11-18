@@ -1,0 +1,36 @@
+{
+ "voice": "chatterbox:none",
+ "broll": true,
+ "segments": [
+  {
+   "say": "Les tests de GTA 6 sont tombés : quatre-vingt-dix-neuf sur cent !",
+   "caption": "GTA 6 : les tests sont tombés. *99/100*",
+   "tag": "À L'INSTANT"
+  },
+  {
+   "say": "Envoie ça à ton pote qui disait que le jeu serait raté.",
+   "caption": "Envoie ça à *ton pote*",
+   "tag": "ENVOIE À UN POTE"
+  },
+  {
+   "say": "Sur Metacritic, il obtient quatre-vingt-dix-neuf.",
+   "caption": "*99* sur Metacritic",
+   "big": "99"
+  },
+  {
+   "say": "Personne n'a jamais fait mieux sur ce site.",
+   "caption": "Personne n'a *jamais fait mieux*",
+   "big": "RECORD"
+  },
+  {
+   "say": "Et cent pour cent des critiques le recommandent.",
+   "caption": "*100 %* le recommandent",
+   "big": "100 %"
+  },
+  {
+   "say": "Et toi, tu valides cette note ?",
+   "caption": "Tu *valides* cette note ?",
+   "big": "?"
+  }
+ ]
+}
