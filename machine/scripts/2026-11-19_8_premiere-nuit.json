@@ -1,0 +1,37 @@
+{
+ "voice": "chatterbox:none",
+ "broll": true,
+ "opener": "neon",
+ "segments": [
+  {
+   "say": "Ta toute première nuit de jeu.",
+   "caption": "Ta *1re nuit* sur GTA 6",
+   "tag": "CETTE NUIT"
+  },
+  {
+   "say": "Vingt-deux heures : je regarde juste la carte.",
+   "caption": "22 h : *juste la carte*",
+   "big": "22:00"
+  },
+  {
+   "say": "Minuit : j'ai oublié de manger.",
+   "caption": "Minuit : *oublié de manger*",
+   "big": "00:00"
+  },
+  {
+   "say": "Trois heures : promis, je vais dormir.",
+   "caption": "3 h : *promis, je dors*",
+   "big": "03:00"
+  },
+  {
+   "say": "Six heures du matin, et tu es encore là.",
+   "caption": "6 h : *toujours debout*",
+   "big": "06:00"
+  },
+  {
+   "say": "Et toi, tu dors cette nuit, oui ou non ?",
+   "caption": "Tu *dors* cette nuit ?",
+   "big": "?"
+  }
+ ]
+}
