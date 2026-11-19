@@ -59,6 +59,9 @@ Concepts qui marchent (à adapter, pas à copier mot pour mot) :
 - Segment 1 = accroche COMPLÈTE dans "caption" (affichée en grand sur la 1re image, qui sert de couverture ; pas de sous-titres mot à mot sur ce segment). Courte (≤ 7 mots), choc, compréhensible sans le son.
 - Privilégier les sujets qu'on envoie à un pote : mèmes de joueur, défis, « toi vs ton pote », calculs persos.
 - (18.11) Mise en page : textes dans la zone sûre (largeur 840 px, décalés à gauche des boutons Instagram) ; "big" ≤ 8 caractères de préférence (réduit automatiquement sinon) ; sous-titres coupés par groupes de sens.
+- (19.11, 10 Reels du 17-18.11) Top 2 = « Une heure par soir » (214 vues, 8,7 s de vue, 46,6 % d'abandon, 5 J'aime) et météo (157 vues) : accroche en « tu » + conséquence concrète pour le spectateur. Pires = news pures (tests 99/100, Game Awards, 212 Go : 3,4-4,5 s de vue, 63-66 % d'abandon) => une news n'est jamais publiée « sèche », toujours sous l'angle « Toi quand… ».
+- (19.11) Les accroches avec emoji/ton « annonce » (« Pas de mode en ligne ? 😳 », « Xbox One ☁️ ») perdent 70-73 % en 3 s ; les mèmes et situations perso restent sous 56 %.
+- (19.11) Toujours 0 partage, 0 commentaire : la question finale seule ne déclenche rien => tester « Tague ton pote qui… » (en cours) ; variantes A/B 18.11 v3 pas encore mesurables.
 ### Algorithme des Reels (recherche du 18.11.2026, sources : déclarations d'Adam Mosseri, Buffer, Metricool, SocialPilot)
 - Les 3 signaux n°1 confirmés : **durée de visionnage** (y compris revisionnages), **partages en message privé par personne touchée**, **J'aime par personne touchée**. Les partages comptent le plus pour toucher des non-abonnés (notre cas : 100 % non-abonnés au début) et plus que les commentaires.
 - **Le 1er test se joue sur 1,5-3 s** : jusqu'à la moitié des gens partent avant 3 s. Accroche à la fois écrite ET dite dès la 1re seconde, image qui bouge dès la 1re seconde (jamais d'écran fixe ou noir), pas de silence.

@@ -1,0 +1,32 @@
+{
+ "voice": "chatterbox:none",
+ "broll": true,
+ "face": "celebrating",
+ "segments": [
+  {
+   "say": "Toi, quand le cofondateur de Rockstar t'écrit enfin.",
+   "caption": "Toi quand Rockstar *t'écrit enfin*",
+   "tag": "MESSAGE"
+  },
+  {
+   "say": "Avant la sortie, il a écrit aux joueurs.",
+   "caption": "Un message *aux joueurs*",
+   "big": "RARE"
+  },
+  {
+   "say": "Il promet un retour familier, et tout nouveau.",
+   "caption": "Un retour *familier et nouveau*",
+   "big": "VICE"
+  },
+  {
+   "say": "Et sa conclusion : on espère que vous allez vous amuser.",
+   "caption": "Sa conclusion : *amusez-vous*",
+   "big": "FUN"
+  },
+  {
+   "say": "Alors toi, tu t'amuses déjà, oui ou non ?",
+   "caption": "Tu t'amuses *déjà* ?",
+   "big": "?"
+  }
+ ]
+}
