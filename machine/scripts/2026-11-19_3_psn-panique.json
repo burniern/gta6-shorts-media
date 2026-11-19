@@ -1,0 +1,32 @@
+{
+ "voice": "chatterbox:none",
+ "broll": true,
+ "face": "surprised",
+ "segments": [
+  {
+   "say": "Toi, quand le réseau a planté hier soir.",
+   "caption": "Toi quand le *PSN a planté*",
+   "tag": "HIER"
+  },
+  {
+   "say": "Quelques heures avant la sortie : plus de quatre mille signalements.",
+   "caption": "Plus de *4000* signalements",
+   "big": "4000"
+  },
+  {
+   "say": "La manette dans une main, le cœur dans l'autre.",
+   "caption": "*Panique* totale",
+   "big": "!!!"
+  },
+  {
+   "say": "Bonne nouvelle : tout était revenu avant la sortie.",
+   "caption": "Tout est revenu *avant minuit*",
+   "big": "OK"
+  },
+  {
+   "say": "Tague ton pote qui a crié en voyant l'erreur.",
+   "caption": "*Tague* ton pote qui a crié",
+   "tag": "TAGUE-LE"
+  }
+ ]
+}
