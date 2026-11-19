@@ -1,0 +1,35 @@
+{
+ "voice": "chatterbox:none",
+ "broll": true,
+ "opener": "drift",
+ "segments": [
+  {
+   "say": "Ton pote qui dit : je fais juste une mission.",
+   "caption": "Ton pote : *juste une mission*",
+   "tag": "21:00"
+  },
+  {
+   "say": "Il prend une voiture.",
+   "caption": "Il *prend une voiture*"
+  },
+  {
+   "say": "Il se perd sur la plage.",
+   "caption": "Il *se perd* sur la plage"
+  },
+  {
+   "say": "Il a cinq étoiles de police.",
+   "caption": "*5 étoiles* de police",
+   "big": "5"
+  },
+  {
+   "say": "Quatre heures plus tard, la mission n'est toujours pas lancée.",
+   "caption": "4 h après : *toujours pas lancée*",
+   "big": "4 H"
+  },
+  {
+   "say": "Allez, tague ton pote qui fait juste une mission.",
+   "caption": "*Tague* ton pote",
+   "tag": "TAGUE-LE"
+  }
+ ]
+}
