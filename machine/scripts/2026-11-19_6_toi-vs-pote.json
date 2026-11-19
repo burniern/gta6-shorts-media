@@ -1,0 +1,43 @@
+{
+ "voice": "none",
+ "broll": true,
+ "face": "laughing",
+ "segments": [
+  {
+   "caption": "Toi vs ton pote *sur GTA 6*",
+   "tag": "JOUR 1",
+   "dur": 1.8,
+   "say": "x"
+  },
+  {
+   "caption": "Toi : *l'histoire*, bien propre",
+   "big": "TOI",
+   "dur": 1.5,
+   "say": "x"
+  },
+  {
+   "caption": "Lui : *3 h à rouler* sans but",
+   "big": "LUI",
+   "dur": 1.7,
+   "say": "x"
+  },
+  {
+   "caption": "Toi : *mission 2*",
+   "big": "TOI",
+   "dur": 1.3,
+   "say": "x"
+  },
+  {
+   "caption": "Lui : toujours *au garage*",
+   "big": "LUI",
+   "dur": 1.5,
+   "say": "x"
+  },
+  {
+   "caption": "T'es lequel des *deux* ?",
+   "big": "?",
+   "dur": 1.9,
+   "say": "x"
+  }
+ ]
+}
