@@ -1,0 +1,30 @@
+{
+ "voice": "chatterbox:none",
+ "broll": true,
+ "face": "office",
+ "segments": [
+  {
+   "say": "Ton patron, quand tu es malade pile aujourd'hui.",
+   "caption": "Ton patron quand t'es *malade aujourd'hui*",
+   "tag": "19.11"
+  },
+  {
+   "say": "Toi, au téléphone : je tousse un peu.",
+   "caption": "Toi : *je tousse un peu*"
+  },
+  {
+   "say": "Lui : et c'est quoi, ce bruit de moteur derrière ?",
+   "caption": "Lui : *c'est quoi ce bruit* ?",
+   "big": "?!"
+  },
+  {
+   "say": "Toi : c'est... la radio.",
+   "caption": "Toi : *c'est la radio*"
+  },
+  {
+   "say": "Alors : vraiment malade, ou en pleine partie ?",
+   "caption": "Malade ou *en pleine partie* ?",
+   "big": "?"
+  }
+ ]
+}
