@@ -1,0 +1,61 @@
+{
+ "voice": "none",
+ "broll": true,
+ "face": "tired",
+ "chat_name": "Kevin",
+ "segments": [
+  {
+   "caption": "Toi au boulot *ce matin*",
+   "tag": "8:00",
+   "dur": 1.8,
+   "say": "x"
+  },
+  {
+   "chat": [
+    [
+     "lui",
+     "T'as dormi combien ?"
+    ]
+   ],
+   "dur": 1.4,
+   "say": "x"
+  },
+  {
+   "chat": [
+    [
+     "moi",
+     "Deux heures. Pourquoi ?"
+    ]
+   ],
+   "dur": 1.5,
+   "say": "x"
+  },
+  {
+   "chat": [
+    [
+     "lui",
+     "T'es venu en pantoufles"
+    ]
+   ],
+   "dur": 1.5,
+   "say": "x"
+  },
+  {
+   "chat": [
+    [
+     "moi",
+     "J'ai encore Vice City dans la tête"
+    ]
+   ],
+   "dur": 1.8,
+   "say": "x"
+  },
+  {
+   "caption": "*Tague* ton pote zombie",
+   "tag": "TAGUE-LE",
+   "big": "ZZZ",
+   "dur": 2.0,
+   "say": "x"
+  }
+ ]
+}
