@@ -1,0 +1,32 @@
+{
+ "voice": "chatterbox:none",
+ "broll": true,
+ "face": "shocked",
+ "segments": [
+  {
+   "say": "Toi, quand tu découvres ce chiffre !",
+   "caption": "Toi quand GTA 6 dépasse *17 millions*",
+   "tag": "À L'INSTANT"
+  },
+  {
+   "say": "Plus de dix-sept millions de copies vendues, selon une estimation.",
+   "caption": "*17 millions* de copies vendues",
+   "big": "17 M"
+  },
+  {
+   "say": "Plus d'un milliard et demi de dollars.",
+   "caption": "*1,65 milliard* de dollars",
+   "big": "1,65 Md$"
+  },
+  {
+   "say": "Pas encore confirmé par Rockstar.",
+   "caption": "Estimation, *pas encore officielle*",
+   "big": "ESTIMÉ"
+  },
+  {
+   "say": "Et toi, tu fais partie des dix-sept millions ?",
+   "caption": "Tu fais partie des *17 millions* ?",
+   "big": "?"
+  }
+ ]
+}
