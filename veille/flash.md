@@ -23,3 +23,4 @@
 - 2026-11-19 15:19 — rien de neuf publiable (pas de nouvelle annonce Rockstar/Take-Two repérée depuis 13:18 ; quota de 10 Reels du 19.11 atteint)
 - 2026-11-19 17:18 — rien de neuf publiable (seulement le post « now available » de Rockstar et Metacritic toujours à 99 après 150 tests, déjà couverts ; aucun patch, aucune panne, aucun chiffre officiel ; quota de 10 Reels du 19.11 atteint)
 - 2026-11-19 19:18 — rien de neuf publiable (quota de 10 Reels du 19.11 atteint ; seule nouveauté : estimation tierce relayée par RockstarINTEL sur X, ~19 M de copies et 1,84 Md$ de revenus — non officielle, mise à jour du chiffre Sensor Tower déjà couvert : https://x.com/GTAonlineNews/status/2123393340099989882)
+- 2026-11-19 23:17 — rien de neuf publiable (aucune annonce Rockstar/Take-Two ni chiffre de ventes officiel ; mises à jour 1.002 déjà antérieures à la sortie ; quota de 10 Reels du 19.11 atteint)
