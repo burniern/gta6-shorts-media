@@ -15,3 +15,4 @@
 - 2026-11-19 04:50 (tâche du matin) — Panne du PlayStation Network quelques heures avant la sortie (18.11 dès ~19h Zurich, plus de 4000 signalements Downdetector, services normaux vers 21:15 Zurich selon la page d'état Sony). Source : https://newsweek.com/playstation-users-report-access-issues-hours-before-gta-vi-launch-12736310 — Reel 10:40.
 - Écarté : « 1 milliard de dollars en 1 heure » (modélisation d'analystes, pas un chiffre officiel) ; « Rockstar s'excuse, patch le 25.11 » (simple post X non sourcé).
 - 2026-11-19 05:50 (tâche du matin) — 8 Reels programmés (07:40, 09:10, 10:40, 12:10, 13:40, 15:10, 18:10, 20:40) + Reel 00:15 déjà publié = 9/10 : il reste 1 seul Reel possible pour Flash aujourd'hui (≥ 45 min d'écart).
+- 2026-11-19 07:24 — rien de neuf (panne PSN du 18.11 déjà couverte ; panne au lancement US rapportée par talkesport/Hollywood Reporter non vérifiable, pages illisibles ; 1 seul Reel encore possible aujourd'hui)
