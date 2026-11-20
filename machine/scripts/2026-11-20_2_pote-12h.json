@@ -1,0 +1,15 @@
+{
+ "voice": "none",
+ "broll": true,
+ "face": "screaming",
+ "chat_name": "Kevin",
+ "segments": [
+  {"caption": "Ton pote a déjà *12 h de jeu*", "tag": "GTA 6", "dur": 1.8, "say": "x"},
+  {"chat": [["lui", "T'en es où dans le jeu ?"]], "dur": 1.5, "say": "x"},
+  {"chat": [["moi", "Je règle encore la radio"]], "dur": 1.6, "say": "x"},
+  {"chat": [["lui", "Moi j'ai 12 h de jeu"]], "dur": 1.5, "say": "x"},
+  {"chat": [["moi", "Il est sorti hier..."]], "dur": 1.5, "say": "x"},
+  {"chat": [["lui", "Je sais."]], "dur": 1.4, "say": "x"},
+  {"caption": "*Tague* ton pote sans sommeil", "tag": "TAGUE-LE", "big": "12 H", "dur": 2.0, "say": "x"}
+ ]
+}
