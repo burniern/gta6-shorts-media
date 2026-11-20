@@ -1,0 +1,12 @@
+{
+ "voice": "none",
+ "broll": true,
+ "face": "tired",
+ "segments": [
+  {"caption": "Ton cerveau après *24 h de GTA 6*", "tag": "JOUR 2", "dur": 2.0, "say": "x"},
+  {"caption": "Tu cherches *la mini-carte* dans la rue", "big": "GPS", "dur": 2.0, "say": "x"},
+  {"caption": "Une sirène passe : *tu te caches*", "big": "POLICE", "dur": 2.0, "say": "x"},
+  {"caption": "La radio du jeu *tourne en boucle*", "big": "RADIO", "dur": 2.0, "say": "x"},
+  {"caption": "Ça t'arrive aussi ? *Oui ou non*", "big": "?", "dur": 2.2, "say": "x"}
+ ]
+}
