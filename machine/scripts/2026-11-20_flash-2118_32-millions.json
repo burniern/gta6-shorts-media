@@ -1,0 +1,33 @@
+{
+ "voice": "chatterbox:none",
+ "broll": true,
+ "face": "phone",
+ "segments": [
+  {
+   "say": "Toi quand tu vois le chiffre officiel de GTA 6.",
+   "caption": "Toi devant le *chiffre officiel*",
+   "tag": "OFFICIEL"
+  },
+  {
+   "say": "Trente-deux millions et demi de copies vendues avant même la sortie.",
+   "caption": "*32,5 millions* de copies avant la sortie",
+   "big": "32,5 M",
+   "tag": "OFFICIEL"
+  },
+  {
+   "say": "Et en un seul jour, près de quatre milliards de dollars.",
+   "caption": "*3,79 milliards* de dollars le jour 1",
+   "big": "3,79 Md$"
+  },
+  {
+   "say": "Le plus gros lancement de l'histoire du divertissement.",
+   "caption": "Le plus gros lancement *de l'histoire*",
+   "big": "RECORD"
+  },
+  {
+   "say": "Alors, tu fais partie des trente-deux millions ?",
+   "caption": "T'es dans les *32,5 millions* ?",
+   "big": "?"
+  }
+ ]
+}
