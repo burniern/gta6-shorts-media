@@ -1,0 +1,32 @@
+{
+ "voice": "chatterbox:none",
+ "broll": true,
+ "opener": "neon",
+ "segments": [
+  {
+   "say": "Ta console, après une nuit entière.",
+   "caption": "Ta console après *24 h de GTA 6*",
+   "tag": "NON-STOP"
+  },
+  {
+   "say": "Elle souffle comme un avion.",
+   "caption": "Elle souffle *comme un avion*",
+   "big": "VROUM"
+  },
+  {
+   "say": "Ta chambre est plus chaude que Vice City.",
+   "caption": "Ta chambre : *plus chaude que Vice City*",
+   "big": "CHAUD"
+  },
+  {
+   "say": "Le chauffage ? Plus besoin.",
+   "caption": "Le chauffage ? *Plus besoin*",
+   "big": "OFF"
+  },
+  {
+   "say": "Alors, elle tient le coup, ou pas ?",
+   "caption": "Ta console *tient le coup* ?",
+   "big": "?"
+  }
+ ]
+}

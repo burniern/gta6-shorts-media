@@ -1,0 +1,32 @@
+{
+ "voice": "chatterbox:none",
+ "broll": true,
+ "face": "celebrating",
+ "segments": [
+  {
+   "say": "Toi, ce vendredi soir.",
+   "caption": "Toi ce soir : *week-end GTA 6*",
+   "tag": "VENDREDI"
+  },
+  {
+   "say": "Tes amis appellent : tu es malade.",
+   "caption": "Tes potes ? *T'es malade*",
+   "big": "MALADE"
+  },
+  {
+   "say": "Ta mère appelle : t'es en réunion.",
+   "caption": "Ta mère ? *En réunion*",
+   "big": "OCCUPÉ"
+  },
+  {
+   "say": "Dimanche soir : t'as pas vu le soleil.",
+   "caption": "Dimanche : *pas vu le soleil*",
+   "big": "0 SOLEIL"
+  },
+  {
+   "say": "Alors, tu sors, ou tu joues ?",
+   "caption": "Sortie *ou GTA 6* ?",
+   "big": "?"
+  }
+ ]
+}
