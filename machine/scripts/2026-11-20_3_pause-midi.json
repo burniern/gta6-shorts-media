@@ -1,0 +1,13 @@
+{
+ "voice": "chatterbox:none",
+ "broll": true,
+ "opener": "drift",
+ "segments": [
+  {"say": "Toi, à la pause de midi.", "caption": "Ta pause de midi *sur GTA 6*", "tag": "12:00"},
+  {"say": "Midi pile : juste cinq minutes.", "caption": "Juste *5 minutes*", "big": "12:00"},
+  {"say": "Midi cinq : une voiture de sport.", "caption": "Une voiture *de sport*", "big": "12:05"},
+  {"say": "Midi quarante : la police partout.", "caption": "*La police* partout", "big": "12:40"},
+  {"say": "Treize heures trente : ton patron t'appelle.", "caption": "Ton patron *t'appelle*", "big": "13:30"},
+  {"say": "Alors, juste cinq minutes, ou démission ?", "caption": "5 minutes *ou démission* ?", "big": "?"}
+ ]
+}
