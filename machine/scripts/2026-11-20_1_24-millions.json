@@ -1,0 +1,28 @@
+{
+ "voice": "chatterbox:none",
+ "broll": true,
+ "face": "shocked",
+ "segments": [
+  {
+   "say": "Toi, un joueur sur vingt-quatre millions.",
+   "caption": "Toi, un joueur *sur 24 millions*",
+   "tag": "JOUR 1"
+  },
+  {
+   "say": "Selon une estimation, GTA 6 a vendu vingt-quatre millions de copies en un jour.",
+   "caption": "*24 millions* de copies en un jour",
+   "big": "24 M",
+   "tag": "ESTIMATION"
+  },
+  {
+   "say": "Soit plus de deux milliards de dollars.",
+   "caption": "Plus de *2,3 milliards* de dollars",
+   "big": "2,3 Md$"
+  },
+  {
+   "say": "Alors, tu fais partie des vingt-quatre millions ?",
+   "caption": "T'es dans les *24 millions* ?",
+   "big": "?"
+  }
+ ]
+}
