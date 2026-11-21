@@ -1,0 +1,13 @@
+{
+ "voice": "chatterbox:none",
+ "broll": true,
+ "face": "excited",
+ "segments": [
+  {"say": "Ton premier samedi sur GTA 6.", "caption": "Ton premier *samedi GTA 6*", "tag": "SAMEDI"},
+  {"say": "Dix heures : juste un petit tour.", "caption": "Juste *un petit tour*", "big": "10:00"},
+  {"say": "Quinze heures : tu n'as pas mangé.", "caption": "Tu n'as *pas mangé*", "big": "15:00"},
+  {"say": "Vingt heures : tes potes sortent sans toi.", "caption": "Tes potes *sortent sans toi*", "big": "20:00"},
+  {"say": "Trois heures du matin : encore une mission.", "caption": "*Encore une* mission", "big": "03:00"},
+  {"say": "Alors, un petit tour, ou nuit blanche ?", "caption": "Petit tour *ou nuit blanche* ?", "big": "?"}
+ ]
+}

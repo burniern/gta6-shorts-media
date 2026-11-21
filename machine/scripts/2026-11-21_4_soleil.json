@@ -1,0 +1,12 @@
+{
+ "voice": "none",
+ "broll": true,
+ "face": "surprised",
+ "segments": [
+  {"caption": "Toi qui sors *après 3 jours de GTA 6*", "tag": "JOUR 3", "dur": 2.0, "say": "x"},
+  {"caption": "Le soleil ? *Tu l'avais oublié*", "big": "SOLEIL", "dur": 2.0, "say": "x"},
+  {"caption": "Tu cherches *ta voiture de sport*", "big": "VROUM", "dur": 2.0, "say": "x"},
+  {"caption": "Un feu rouge : *tu t'arrêtes, déçu*", "big": "STOP", "dur": 2.0, "say": "x"},
+  {"caption": "Ça t'est arrivé ? *Oui ou non*", "big": "?", "dur": 2.2, "say": "x"}
+ ]
+}

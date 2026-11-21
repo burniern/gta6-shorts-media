@@ -1,0 +1,34 @@
+{
+ "voice": "chatterbox:none",
+ "broll": true,
+ "face": "thinking",
+ "segments": [
+  {
+   "say": "Ton pote qui disait : ça va faire un flop.",
+   "caption": "Ton pote qui disait *« ça va flop »*",
+   "tag": "OFFICIEL"
+  },
+  {
+   "say": "Trente-deux millions et demi de copies avant la sortie.",
+   "caption": "*32,5 millions* avant la sortie",
+   "big": "32,5 M",
+   "tag": "OFFICIEL"
+  },
+  {
+   "say": "Le plus gros lancement de l'histoire.",
+   "caption": "Le plus gros lancement *de l'histoire*",
+   "big": "RECORD"
+  },
+  {
+   "say": "Et lui ? Il joue depuis jeudi.",
+   "caption": "Et lui ? *Il y joue depuis jeudi*",
+   "big": "JEUDI"
+  },
+  {
+   "say": "Ce pote, tague-le en commentaire.",
+   "caption": "*Tague* ton pote du flop",
+   "tag": "TAGUE-LE",
+   "big": "FLOP ?"
+  }
+ ]
+}

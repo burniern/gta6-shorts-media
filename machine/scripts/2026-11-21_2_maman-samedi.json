@@ -1,0 +1,14 @@
+{
+ "voice": "none",
+ "broll": true,
+ "face": "waking",
+ "chat_name": "Maman",
+ "segments": [
+  {"caption": "Ta mère, samedi matin, *jour 3 de GTA 6*", "tag": "SAMEDI", "dur": 1.9, "say": "x"},
+  {"chat": [["lui", "Tu sors de ta chambre ?"]], "dur": 1.5, "say": "x"},
+  {"chat": [["moi", "Juste une mission"]], "dur": 1.5, "say": "x"},
+  {"chat": [["lui", "Tu as dit ça jeudi"]], "dur": 1.6, "say": "x"},
+  {"chat": [["moi", "C'est la même mission"]], "dur": 1.7, "say": "x"},
+  {"caption": "*Tague* ton pote qui dit ça", "tag": "TAGUE-LE", "big": "JOUR 3", "dur": 2.1, "say": "x"}
+ ]
+}

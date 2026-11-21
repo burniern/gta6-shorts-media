@@ -1,0 +1,12 @@
+{
+ "voice": "chatterbox:none",
+ "broll": true,
+ "opener": "neon",
+ "segments": [
+  {"say": "Ta copine, quand tu lances encore le jeu.", "caption": "Ta copine quand tu *relances GTA 6*", "tag": "SAMEDI"},
+  {"say": "Jeudi : elle trouvait ça mignon.", "caption": "Jeudi : *c'est mignon*", "big": "JEUDI"},
+  {"say": "Vendredi : elle soupire.", "caption": "Vendredi : *elle soupire*", "big": "VENDREDI"},
+  {"say": "Samedi : elle cache la manette.", "caption": "Samedi : *elle cache la manette*", "big": "SAMEDI"},
+  {"say": "Alors, la manette, ou ta copine ?", "caption": "La manette *ou ta copine* ?", "big": "?"}
+ ]
+}

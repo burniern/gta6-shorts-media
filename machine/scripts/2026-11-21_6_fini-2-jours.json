@@ -1,0 +1,12 @@
+{
+ "voice": "chatterbox:none",
+ "broll": true,
+ "opener": "drift",
+ "segments": [
+  {"say": "Ton pote qui dit qu'il a déjà fini le jeu.", "caption": "Ton pote : *« j'ai déjà fini »*", "tag": "JOUR 3"},
+  {"say": "Le jeu est sorti jeudi.", "caption": "Le jeu est sorti *jeudi*", "big": "JEUDI"},
+  {"say": "Il dort combien ? Zéro heure.", "caption": "Il dort combien ? *Zéro*", "big": "0 H"},
+  {"say": "Et la fin ? Il ne peut pas te la raconter.", "caption": "La fin ? *Il ne sait pas*", "big": "MENTEUR"},
+  {"say": "Alors, ton pote, il ment, ou pas ?", "caption": "Il ment *ou pas* ?", "big": "?"}
+ ]
+}
