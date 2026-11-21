@@ -3,10 +3,30 @@
  "broll": true,
  "opener": "neon",
  "segments": [
-  {"say": "Ta copine, quand tu lances encore le jeu.", "caption": "Ta copine quand tu *relances GTA 6*", "tag": "SAMEDI"},
-  {"say": "Jeudi : elle trouvait ça mignon.", "caption": "Jeudi : *c'est mignon*", "big": "JEUDI"},
-  {"say": "Vendredi : elle soupire.", "caption": "Vendredi : *elle soupire*", "big": "VENDREDI"},
-  {"say": "Samedi : elle cache la manette.", "caption": "Samedi : *elle cache la manette*", "big": "SAMEDI"},
-  {"say": "Alors, la manette, ou ta copine ?", "caption": "La manette *ou ta copine* ?", "big": "?"}
+  {
+   "say": "Ta copine, quand tu relances encore le jeu.",
+   "caption": "Ta copine quand tu *relances GTA 6*",
+   "tag": "SAMEDI"
+  },
+  {
+   "say": "Premier jour : elle trouve ça mignon.",
+   "caption": "Jour 1 : *c'est mignon*",
+   "big": "JOUR 1"
+  },
+  {
+   "say": "Deuxième jour : elle soupire très fort.",
+   "caption": "Jour 2 : *elle soupire*",
+   "big": "JOUR 2"
+  },
+  {
+   "say": "Troisième jour : elle cache ta manette.",
+   "caption": "Jour 3 : *elle cache la manette*",
+   "big": "JOUR 3"
+  },
+  {
+   "say": "Alors, tu choisis la manette, ou ta copine ?",
+   "caption": "La manette *ou ta copine* ?",
+   "big": "?"
+  }
  ]
 }
