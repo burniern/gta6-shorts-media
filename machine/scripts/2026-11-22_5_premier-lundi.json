@@ -3,11 +3,35 @@
  "broll": true,
  "face": "tired",
  "segments": [
-  {"say": "Demain, ton premier lundi après GTA 6.", "caption": "Ton *premier lundi* après GTA 6", "tag": "LUNDI"},
-  {"say": "Six heures quarante-cinq : le réveil sonne.", "caption": "Le réveil *sonne*", "big": "06:45"},
-  {"say": "Huit heures : tu cherches la mini-carte.", "caption": "Tu cherches *la mini-carte*", "big": "08:00"},
-  {"say": "Midi : tu cherches où sauvegarder.", "caption": "Tu cherches *où sauvegarder*", "big": "12:00"},
-  {"say": "Dix-sept heures : tu cours, Vice City t'attend.", "caption": "Tu cours, *Vice City t'attend*", "big": "17:00"},
-  {"say": "Alors, demain, congé ou zombie ?", "caption": "Congé *ou zombie* ?", "big": "?"}
+  {
+   "say": "Demain, c'est ton premier lundi depuis la sortie du jeu.",
+   "caption": "Ton *premier lundi* après GTA 6",
+   "tag": "LUNDI"
+  },
+  {
+   "say": "Le réveil sonne, beaucoup trop tôt.",
+   "caption": "Le réveil sonne, *trop tôt*",
+   "big": "06:45"
+  },
+  {
+   "say": "Au bureau, tu cherches la carte.",
+   "caption": "Tu cherches *la carte*",
+   "big": "08:00"
+  },
+  {
+   "say": "À midi, tu cherches où sauvegarder.",
+   "caption": "Tu cherches *où sauvegarder*",
+   "big": "12:00"
+  },
+  {
+   "say": "Le soir, tu rentres en courant.",
+   "caption": "Tu rentres *en courant*",
+   "big": "17:00"
+  },
+  {
+   "say": "Alors, demain, congé ou zombie ?",
+   "caption": "Congé *ou zombie* ?",
+   "big": "?"
+  }
  ]
 }
