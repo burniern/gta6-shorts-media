@@ -1,0 +1,13 @@
+{
+ "voice": "none",
+ "broll": true,
+ "face": "laughing",
+ "segments": [
+  {"caption": "Ton pote : « GTA 6, *c'est surcoté* »", "tag": "LUI", "dur": 2.0, "say": "x"},
+  {"caption": "Jeudi : *« pas pour moi »*", "big": "JEUDI", "dur": 1.7, "say": "x"},
+  {"caption": "Vendredi : *« juste pour voir »*", "big": "VENDREDI", "dur": 1.7, "say": "x"},
+  {"caption": "Samedi : *il ne répond plus*", "big": "SAMEDI", "dur": 1.7, "say": "x"},
+  {"caption": "Dimanche : *il t'explique la carte*", "big": "DIMANCHE", "dur": 1.9, "say": "x"},
+  {"caption": "*Tague* ton pote qui disait ça", "tag": "TAGUE-LE", "big": "?", "dur": 2.0, "say": "x"}
+ ]
+}

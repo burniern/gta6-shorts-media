@@ -1,0 +1,14 @@
+{
+ "voice": "none",
+ "broll": true,
+ "face": "phone",
+ "chat_name": "Kevin",
+ "segments": [
+  {"caption": "Toi dimanche soir, *lundi c'est demain*", "tag": "DIMANCHE", "dur": 1.9, "say": "x"},
+  {"chat": [["lui", "Tu dors à quelle heure ?"]], "dur": 1.5, "say": "x"},
+  {"chat": [["moi", "Après cette mission"]], "dur": 1.5, "say": "x"},
+  {"chat": [["lui", "Il est 2 h du mat"]], "dur": 1.5, "say": "x"},
+  {"chat": [["moi", "Attends, on est dimanche ??"]], "dur": 1.8, "say": "x"},
+  {"caption": "*Tague* ton Kevin du dimanche", "tag": "TAGUE-LE", "big": "LUNDI", "dur": 2.1, "say": "x"}
+ ]
+}

@@ -1,0 +1,12 @@
+{
+ "voice": "chatterbox:none",
+ "broll": true,
+ "face": "shocked",
+ "segments": [
+  {"say": "Tu joues encore avec les réglages de base ?", "caption": "Tu joues avec *ces réglages* ?", "tag": "ASTUCE"},
+  {"say": "Un : le flou de mouvement, à zéro.", "caption": "Flou de mouvement : *0*", "big": "0"},
+  {"say": "Deux : la caméra qui tremble ? Coupée.", "caption": "Tremblement caméra : *OFF*", "big": "OFF"},
+  {"say": "Trois : les sous-titres, activés partout.", "caption": "Sous-titres : *ON*", "big": "ON"},
+  {"say": "Alors, tu changes tout, ou tu gardes tout ?", "caption": "Tu changes *ou tu gardes* ?", "big": "?"}
+ ]
+}

@@ -1,0 +1,12 @@
+{
+ "voice": "chatterbox:none",
+ "broll": true,
+ "opener": "drift",
+ "segments": [
+  {"say": "Ton dimanche, avant GTA 6.", "caption": "Ton dimanche *avant GTA 6*", "tag": "AVANT"},
+  {"say": "Repas de famille, balade, au lit tôt.", "caption": "Famille, *balade*, au lit tôt", "tag": "AVANT"},
+  {"say": "Maintenant : petit déjeuner à quinze heures.", "caption": "Petit-déj *à 15 h*", "big": "15:00", "tag": "MAINTENANT"},
+  {"say": "La balade ? En voiture, à Vice City.", "caption": "Balade *à Vice City*", "tag": "MAINTENANT"},
+  {"say": "Alors, dimanche famille, ou dimanche Vice City ?", "caption": "Famille *ou Vice City* ?", "big": "?"}
+ ]
+}

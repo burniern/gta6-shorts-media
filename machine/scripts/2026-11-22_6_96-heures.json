@@ -1,0 +1,12 @@
+{
+ "voice": "chatterbox:none",
+ "broll": true,
+ "opener": "neon",
+ "segments": [
+  {"say": "Depuis jeudi, tu as joué combien d'heures ?", "caption": "T'as joué *combien d'heures* ?", "tag": "CALCUL"},
+  {"say": "De jeudi minuit à dimanche soir : quatre-vingt-seize heures.", "caption": "Jeudi à dimanche : *96 heures*", "big": "96 H"},
+  {"say": "Tu dors huit heures par nuit ? Il en reste soixante-quatre.", "caption": "Moins le sommeil : *64 heures*", "big": "64 H"},
+  {"say": "Tu en joues la moitié ? Trente-deux heures.", "caption": "La moitié : *32 heures*", "big": "32 H"},
+  {"say": "Alors, plus ou moins de trente-deux heures ?", "caption": "Plus *ou moins* de 32 h ?", "big": "?"}
+ ]
+}
