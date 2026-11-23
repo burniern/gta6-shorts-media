@@ -1,0 +1,33 @@
+{
+ "voice": "chatterbox:none",
+ "broll": true,
+ "face": "shocked",
+ "segments": [
+  {
+   "say": "La musique du jeu vient de battre un record.",
+   "caption": "La musique de GTA 6 *bat un record*",
+   "tag": "RECORD"
+  },
+  {
+   "say": "L'album du jeu a trente-quatre chansons.",
+   "caption": "L'album officiel : *34 titres*",
+   "big": "34"
+  },
+  {
+   "say": "Premier jour : presque trente millions d'écoutes.",
+   "caption": "1er jour : *29,85 millions* d'écoutes",
+   "big": "29,85 M",
+   "tag": "SPOTIFY"
+  },
+  {
+   "say": "D'après Pop Base, c'est un record pour une bande originale.",
+   "caption": "Record pour *une bande originale*",
+   "tag": "SELON POP BASE"
+  },
+  {
+   "say": "Et toi, tu l'écoutes aussi en vrai ?",
+   "caption": "Tu l'écoutes *aussi en vrai* ?",
+   "big": "?"
+  }
+ ]
+}
