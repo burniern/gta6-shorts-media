@@ -1,0 +1,32 @@
+{
+ "voice": "chatterbox:none",
+ "broll": true,
+ "opener": "neon",
+ "segments": [
+  {
+   "say": "Une heure par soir jusqu'à Noël, ça donne quoi ?",
+   "caption": "1 h par soir *jusqu'à Noël* ?",
+   "tag": "CALCUL"
+  },
+  {
+   "say": "Ça te laisse trente et un soirs.",
+   "caption": "Jusqu'au 23.12 : *31 soirs*",
+   "big": "31"
+  },
+  {
+   "say": "Une heure par soir : trente et une heures de jeu.",
+   "caption": "1 h par soir : *31 heures*",
+   "big": "31 H"
+  },
+  {
+   "say": "Sans les week-ends : vingt-trois heures.",
+   "caption": "Sans les week-ends : *23 heures*",
+   "big": "23 H"
+  },
+  {
+   "say": "Alors, fini avant Noël, oui ou non ?",
+   "caption": "Fini *avant Noël* ?",
+   "big": "?"
+  }
+ ]
+}
