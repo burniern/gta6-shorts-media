@@ -1,0 +1,42 @@
+{
+ "voice": "none",
+ "broll": true,
+ "face": "laughing",
+ "segments": [
+  {
+   "caption": "GTA 6 est *injouable*",
+   "tag": "AVIS",
+   "dur": 2.0,
+   "say": "x"
+  },
+  {
+   "caption": "Impossible *de poser la manette*",
+   "dur": 1.7,
+   "say": "x"
+  },
+  {
+   "caption": "Impossible *de dormir*",
+   "big": "03:00",
+   "dur": 1.7,
+   "say": "x"
+  },
+  {
+   "caption": "Impossible *d'aller au boulot*",
+   "big": "LUNDI",
+   "dur": 1.8,
+   "say": "x"
+  },
+  {
+   "caption": "Littéralement *injouable*",
+   "dur": 1.8,
+   "say": "x"
+  },
+  {
+   "caption": "*Tague* ton pote qui n'a pas dormi",
+   "tag": "TAGUE-LE",
+   "big": "?",
+   "dur": 2.1,
+   "say": "x"
+  }
+ ]
+}
