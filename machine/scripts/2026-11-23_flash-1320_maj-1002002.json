@@ -1,0 +1,11 @@
+{
+ "voice": "chatterbox:none",
+ "broll": true,
+ "face": "phone",
+ "segments": [
+  {"say": "Toi quand la première mise à jour arrive enfin.", "caption": "Toi quand la *1re MAJ* tombe", "tag": "À L'INSTANT"},
+  {"say": "Elle pèse environ six cents mégas sur PS5.", "caption": "MAJ *01.002.002* : PS5 *~600 Mo*, Xbox *1,6 Go*", "big": "600 Mo", "tag": "À L'INSTANT"},
+  {"say": "Sur PS5, elle arrive par vagues, en six heures environ.", "caption": "PS5 : par *vagues*, tous en *~6 h*", "big": "6 H"},
+  {"say": "Tu l'as déjà, ou tu attends ta vague ?", "caption": "Tu l'as *déjà* ou tu *attends* ?", "big": "?"}
+ ]
+}
