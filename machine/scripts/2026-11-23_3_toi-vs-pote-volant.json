@@ -1,0 +1,38 @@
+{
+ "voice": "chatterbox:none",
+ "broll": true,
+ "opener": "drift",
+ "segments": [
+  {
+   "say": "Toi contre ton pote, au volant.",
+   "caption": "Toi vs ton pote *au volant*",
+   "tag": "TOI VS LUI"
+  },
+  {
+   "say": "Toi : tu t'arrêtes au feu rouge.",
+   "caption": "Toi : *stop au feu rouge*",
+   "tag": "TOI"
+  },
+  {
+   "say": "Lui : il passe par le trottoir.",
+   "caption": "Lui : *par le trottoir*",
+   "tag": "LUI"
+  },
+  {
+   "say": "Toi : tu ranges la voiture au garage.",
+   "caption": "Toi : *au garage*",
+   "tag": "TOI"
+  },
+  {
+   "say": "Lui : la voiture est dans la mer.",
+   "caption": "Lui : *dans la mer*",
+   "tag": "LUI"
+  },
+  {
+   "say": "Tague ton pote qui conduit comme ça.",
+   "caption": "*Tague* ton pote au volant",
+   "tag": "TAGUE-LE",
+   "big": "?"
+  }
+ ]
+}
