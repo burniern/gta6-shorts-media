@@ -1,0 +1,12 @@
+{
+ "voice": "chatterbox:none",
+ "broll": true,
+ "face": "shocked man",
+ "segments": [
+  {"say": "Toi quand ta sauvegarde plantait depuis jeudi.", "caption": "Toi quand ta *sauvegarde* plantait", "tag": "À L'INSTANT"},
+  {"say": "Rockstar a publié les notes du patch.", "caption": "Notes de la MAJ *01.002.002* publiées", "big": "PATCH", "tag": "À L'INSTANT"},
+  {"say": "Corrigé : la sauvegarde auto et des plantages.", "caption": "Corrigé : *sauvegarde auto* et *plantages*", "big": "SAVE"},
+  {"say": "Et les appels qui bloquaient l'histoire.", "caption": "Aussi : les *appels* qui bloquaient l'histoire", "big": "FIX"},
+  {"say": "Ta sauvegarde, elle a sauté ou pas ?", "caption": "Ta sauvegarde a *sauté* ou *pas* ?", "big": "?"}
+ ]
+}
