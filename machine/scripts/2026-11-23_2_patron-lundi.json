@@ -1,0 +1,61 @@
+{
+ "voice": "none",
+ "broll": true,
+ "face": "tired",
+ "chat_name": "Patron",
+ "segments": [
+  {
+   "caption": "Toi lundi matin, *ton patron t'écrit*",
+   "tag": "LUNDI",
+   "dur": 1.9,
+   "say": "x"
+  },
+  {
+   "chat": [
+    [
+     "lui",
+     "T'as une petite mine ce matin"
+    ]
+   ],
+   "dur": 1.6,
+   "say": "x"
+  },
+  {
+   "chat": [
+    [
+     "moi",
+     "Grosse semaine..."
+    ]
+   ],
+   "dur": 1.5,
+   "say": "x"
+  },
+  {
+   "chat": [
+    [
+     "lui",
+     "On est lundi"
+    ]
+   ],
+   "dur": 1.4,
+   "say": "x"
+  },
+  {
+   "chat": [
+    [
+     "moi",
+     "Je sais. Depuis jeudi."
+    ]
+   ],
+   "dur": 1.8,
+   "say": "x"
+  },
+  {
+   "caption": "*Tague* ton collègue zombie",
+   "tag": "TAGUE-LE",
+   "big": "LUNDI",
+   "dur": 2.1,
+   "say": "x"
+  }
+ ]
+}
