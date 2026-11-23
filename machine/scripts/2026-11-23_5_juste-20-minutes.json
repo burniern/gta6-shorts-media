@@ -1,0 +1,32 @@
+{
+ "voice": "chatterbox:none",
+ "broll": true,
+ "face": "tired",
+ "segments": [
+  {
+   "say": "Toi lundi soir : juste vingt minutes, promis.",
+   "caption": "Lundi soir : *juste 20 minutes*",
+   "tag": "PROMIS"
+  },
+  {
+   "say": "Vingt et une heures : tu lances le jeu.",
+   "caption": "Tu lances *le jeu*",
+   "big": "21:00"
+  },
+  {
+   "say": "Vingt-trois heures : encore une mission.",
+   "caption": "*Encore une* mission",
+   "big": "23:00"
+  },
+  {
+   "say": "Trois heures : réveil dans quatre heures.",
+   "caption": "Réveil *dans 4 heures*",
+   "big": "03:00"
+  },
+  {
+   "say": "Alors, tu vas dormir, ou tu relances une mission ?",
+   "caption": "Dodo *ou encore une* ?",
+   "big": "?"
+  }
+ ]
+}
