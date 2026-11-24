@@ -1,0 +1,32 @@
+{
+ "voice": "chatterbox:none",
+ "broll": true,
+ "opener": "neon",
+ "segments": [
+  {
+   "say": "Dix-sept heures de GTA 6, ça représente quoi ?",
+   "caption": "17 heures de GTA 6, *ça représente quoi* ?",
+   "tag": "CALCUL"
+  },
+  {
+   "say": "C'est la moyenne par joueur sur PS5, selon Sony.",
+   "caption": "La moyenne *par joueur* sur PS5",
+   "big": "17 H"
+  },
+  {
+   "say": "Plus de deux journées de boulot de huit heures.",
+   "caption": "Plus de *2 journées* de boulot",
+   "big": "2 J"
+  },
+  {
+   "say": "Ou trente-quatre épisodes de trente minutes.",
+   "caption": "*34 épisodes* de 30 min",
+   "big": "34"
+  },
+  {
+   "say": "Alors, tu regrettes ces heures, oui ou non ?",
+   "caption": "Tu regrettes, *oui ou non* ?",
+   "big": "?"
+  }
+ ]
+}

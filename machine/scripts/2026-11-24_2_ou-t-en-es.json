@@ -1,0 +1,14 @@
+{
+ "voice": "none",
+ "broll": true,
+ "face": "phone",
+ "chat_name": "Kevin",
+ "segments": [
+  {"caption": "Ton pote te demande *où t'en es*", "tag": "GTA 6", "dur": 1.9, "say": "x"},
+  {"chat": [["lui", "T'en es où dans l'histoire ?"]], "dur": 1.6, "say": "x"},
+  {"chat": [["moi", "2 %"]], "dur": 1.4, "say": "x"},
+  {"chat": [["lui", "T'as joué tout le week-end"]], "dur": 1.7, "say": "x"},
+  {"chat": [["moi", "J'ai acheté des fringues et fui la police"]], "dur": 1.9, "say": "x"},
+  {"caption": "*Tague* ton pote qui fait tout sauf l'histoire", "tag": "TAGUE-LE", "big": "2 %", "dur": 2.1, "say": "x"}
+ ]
+}

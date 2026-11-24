@@ -1,0 +1,12 @@
+{
+ "voice": "chatterbox:none",
+ "broll": true,
+ "face": "shocked",
+ "segments": [
+  {"say": "Tu as joué combien d'heures à GTA 6 ?", "caption": "Tu as joué *combien d'heures* ?", "tag": "OFFICIEL"},
+  {"say": "Sony vient de donner les chiffres.", "caption": "Sony donne *les chiffres*", "tag": "PLAYSTATION"},
+  {"say": "Plus de trente-neuf millions de joueurs sur PS5.", "caption": "*39 millions* de joueurs", "big": "39 M"},
+  {"say": "En moyenne, dix-sept heures de jeu chacun.", "caption": "En moyenne *17 heures* chacun", "big": "17 H"},
+  {"say": "Et toi, tu es au-dessus ou en dessous ?", "caption": "Au-dessus *ou en dessous* ?", "big": "?"}
+ ]
+}

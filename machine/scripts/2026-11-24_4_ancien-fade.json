@@ -1,0 +1,13 @@
+{
+ "voice": "none",
+ "broll": true,
+ "face": "thoughtful",
+ "segments": [
+  {"caption": "Toi qui relances *l'ancien GTA*", "tag": "APRÈS GTA 6", "dur": 2.0, "say": "x"},
+  {"caption": "Après *5 jours* sur GTA 6", "big": "5 JOURS", "dur": 1.7, "say": "x"},
+  {"caption": "Les graphismes : *2013*", "big": "2013", "dur": 1.7, "say": "x"},
+  {"caption": "Tu éteins *direct*", "dur": 1.7, "say": "x"},
+  {"caption": "Littéralement *impossible*", "dur": 1.7, "say": "x"},
+  {"caption": "*Tague* ton pote qui y joue encore", "tag": "TAGUE-LE", "big": "?", "dur": 2.1, "say": "x"}
+ ]
+}

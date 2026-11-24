@@ -1,0 +1,12 @@
+{
+ "voice": "chatterbox:none",
+ "broll": true,
+ "opener": "police",
+ "segments": [
+  {"say": "Ton plan dans GTA 6 : suivre l'histoire.", "caption": "Ton plan : *suivre l'histoire*", "tag": "LE PLAN"},
+  {"say": "Une minute plus tard : tu voles une voiture.", "caption": "Tu voles *une voiture*", "big": "1 MIN"},
+  {"say": "Trois minutes : la police est derrière toi.", "caption": "*La police* derrière toi", "big": "3 MIN"},
+  {"say": "Dix minutes : tu es à la plage, sans voiture.", "caption": "À la plage, *sans voiture*", "big": "10 MIN"},
+  {"say": "Alors, ton plan, il a tenu combien de temps ?", "caption": "Ton plan *a tenu combien* ?", "big": "?"}
+ ]
+}

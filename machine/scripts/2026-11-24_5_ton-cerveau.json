@@ -1,0 +1,12 @@
+{
+ "voice": "chatterbox:none",
+ "broll": true,
+ "face": "tired",
+ "segments": [
+  {"say": "Ton cerveau après cinq jours de GTA 6.", "caption": "Ton cerveau *après 5 jours* de GTA 6", "tag": "MARDI"},
+  {"say": "Au feu rouge, tu cherches la mini-carte.", "caption": "Tu cherches *la mini-carte*", "big": "GPS"},
+  {"say": "Une belle voiture passe : tu veux monter dedans.", "caption": "Une belle voiture : *tu veux monter*", "big": "VROUM"},
+  {"say": "Une sirène au loin : tu sursautes.", "caption": "Une sirène : *tu sursautes*", "big": "SIRÈNE"},
+  {"say": "Ton cerveau aussi, ou c'est juste moi ?", "caption": "Toi aussi *ou juste moi* ?", "big": "?"}
+ ]
+}
