@@ -1,0 +1,12 @@
+{
+ "voice": "chatterbox:none",
+ "broll": true,
+ "opener": "neon",
+ "segments": [
+  {"say": "Deux heures de GTA 6 par soir jusqu'au Nouvel An ?", "caption": "*2 h par soir* jusqu'au Nouvel An ?", "tag": "CALCUL"},
+  {"say": "D'aujourd'hui au trente et un décembre, trente-sept soirs.", "caption": "Jusqu'au 31.12 : *37 soirs*", "big": "37"},
+  {"say": "Ça fait soixante-quatorze heures de jeu.", "caption": "*74 heures* de jeu", "big": "74 H"},
+  {"say": "Presque deux semaines de boulot à plein temps.", "caption": "Presque *2 semaines de boulot*", "big": "x2"},
+  {"say": "Tu tiens le rythme, oui ou non ?", "caption": "Tu tiens, *oui ou non* ?", "big": "?"}
+ ]
+}
