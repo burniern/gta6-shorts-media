@@ -1,0 +1,12 @@
+{
+ "voice": "chatterbox:none",
+ "broll": true,
+ "face": "shocked",
+ "segments": [
+  {"say": "Demain, GTA 6 aura déjà une semaine.", "caption": "Demain, GTA 6 a *déjà 1 semaine*", "tag": "J+6"},
+  {"say": "Sorti le dix-neuf novembre.", "caption": "Sorti le *19 novembre*", "big": "19.11"},
+  {"say": "Une semaine, c'est cent soixante-huit heures.", "caption": "1 semaine = *168 heures*", "big": "168 H"},
+  {"say": "Et toi, tu en as dormi combien ?", "caption": "Tu en as *dormi combien* ?", "big": "?"},
+  {"say": "Plus ou moins que sur le jeu ?", "caption": "Plus *ou moins* que sur le jeu ?", "big": "?"}
+ ]
+}
