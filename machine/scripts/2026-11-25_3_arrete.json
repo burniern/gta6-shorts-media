@@ -1,0 +1,32 @@
+{
+ "voice": "chatterbox:none",
+ "broll": true,
+ "opener": "drift",
+ "segments": [
+  {
+   "say": "Arrête de jouer à GTA 6 comme ça.",
+   "caption": "Arrête de jouer *comme ça*",
+   "tag": "STOP"
+  },
+  {
+   "say": "Règle un : une pause toutes les deux heures.",
+   "caption": "Une pause *toutes les 2 h*",
+   "big": "1"
+  },
+  {
+   "say": "Règle deux : la manette en charge avant de lancer.",
+   "caption": "La manette *en charge avant*",
+   "big": "2"
+  },
+  {
+   "say": "Règle trois : mange un vrai repas.",
+   "caption": "Mange un *vrai repas*",
+   "big": "3"
+  },
+  {
+   "say": "Tu en respectes combien, zéro ou trois ?",
+   "caption": "Tu en respectes *0 ou 3* ?",
+   "big": "0 ou 3"
+  }
+ ]
+}
