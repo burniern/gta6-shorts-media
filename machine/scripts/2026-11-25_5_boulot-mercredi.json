@@ -1,0 +1,35 @@
+{
+ "voice": "chatterbox:none",
+ "broll": true,
+ "face": "tired",
+ "segments": [
+  {
+   "say": "Toi au boulot après six nuits de GTA 6.",
+   "caption": "Toi au boulot *après 6 nuits*",
+   "tag": "GTA 6"
+  },
+  {
+   "say": "Tu dors quatre heures par nuit.",
+   "caption": "*4 heures* de sommeil",
+   "big": "4 H"
+  },
+  {
+   "say": "Ton café ne fait plus rien.",
+   "caption": "Ton café *ne fait plus rien*"
+  },
+  {
+   "say": "Tu bâilles toutes les deux minutes.",
+   "caption": "Tu bâilles *toutes les 2 minutes*",
+   "big": "2 MIN"
+  },
+  {
+   "say": "Ton collègue parle, tu entends la radio du jeu.",
+   "caption": "Tu entends *la radio du jeu*"
+  },
+  {
+   "say": "Ce soir, tu dors tôt, oui ou non ?",
+   "caption": "Ce soir, tu dors tôt ? *Oui ou non*",
+   "big": "?"
+  }
+ ]
+}
