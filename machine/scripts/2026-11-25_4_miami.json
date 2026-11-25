@@ -1,0 +1,13 @@
+{
+ "voice": "none",
+ "broll": true,
+ "face": "laughing",
+ "segments": [
+  {"caption": "Toi à Miami *après GTA 6*", "tag": "VICE CITY", "dur": 2.0, "say": "x"},
+  {"caption": "Tu connais les rues *sans GPS*", "dur": 1.7, "say": "x"},
+  {"caption": "Tu cherches *la mini-carte*", "dur": 1.7, "say": "x"},
+  {"caption": "Une sirène : *tu te caches*", "dur": 1.7, "say": "x"},
+  {"caption": "Les vacances les plus *stressantes*", "dur": 1.7, "say": "x"},
+  {"caption": "*Tague* ton pote qui veut aller à Miami", "tag": "TAGUE-LE", "big": "?", "dur": 2.1, "say": "x"}
+ ]
+}
