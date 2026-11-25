@@ -1,0 +1,14 @@
+{
+ "voice": "none",
+ "broll": true,
+ "face": "phone",
+ "chat_name": "Kevin",
+ "segments": [
+  {"caption": "Ton pote te parle du *Black Friday*", "tag": "GTA 6", "dur": 1.9, "say": "x"},
+  {"chat": [["lui", "Black Friday vendredi, tu achètes quoi ?"]], "dur": 1.8, "say": "x"},
+  {"chat": [["moi", "Des fringues"]], "dur": 1.4, "say": "x"},
+  {"chat": [["lui", "Enfin ! Pour toi ?"]], "dur": 1.5, "say": "x"},
+  {"chat": [["moi", "Pour mon perso dans GTA 6"]], "dur": 1.8, "say": "x"},
+  {"caption": "*Tague* ton pote qui dépense tout dans le jeu", "tag": "TAGUE-LE", "dur": 2.1, "say": "x"}
+ ]
+}
