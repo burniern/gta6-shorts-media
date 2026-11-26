@@ -1,0 +1,34 @@
+{
+ "voice": "chatterbox:none",
+ "broll": true,
+ "face": "tired",
+ "segments": [
+  {
+   "say": "Ton patron sait que tu joues toute la nuit.",
+   "caption": "Ton patron *sait tout*",
+   "tag": "GTA 6"
+  },
+  {
+   "say": "Tu as des valises sous les yeux.",
+   "caption": "Des *valises* sous les yeux"
+  },
+  {
+   "say": "Tu dis mission au lieu de dossier.",
+   "caption": "Tu dis *mission* au lieu de *dossier*"
+  },
+  {
+   "say": "Tu entends une sirène, tu te caches.",
+   "caption": "Une sirène : *tu te caches*"
+  },
+  {
+   "say": "Et tu dors debout en réunion.",
+   "caption": "Tu dors *debout en réunion*",
+   "big": "ZZZ"
+  },
+  {
+   "say": "Tague le collègue qui joue en cachette.",
+   "caption": "*Tague* le collègue qui joue en cachette",
+   "tag": "TAGUE-LE"
+  }
+ ]
+}
