@@ -1,0 +1,12 @@
+{
+ "voice": "chatterbox:none",
+ "broll": true,
+ "opener": "neon",
+ "segments": [
+  {"say": "Tu as joué combien d'heures cette semaine ?", "caption": "Tu as joué *combien d'heures* ?", "tag": "GTA 6"},
+  {"say": "Deux heures par soir, sept soirs.", "caption": "2 h par soir, *7 soirs*", "big": "7 X 2"},
+  {"say": "Ça fait quatorze heures.", "caption": "Ça fait *14 heures*", "big": "14 H"},
+  {"say": "Selon Sony, un joueur moyen avait déjà dix-sept heures en quatre jours.", "caption": "Joueur moyen sur PS5 : *17 h en 4 jours*", "big": "17 H", "tag": "SONY"},
+  {"say": "Plus ou moins que dix-sept heures, toi ?", "caption": "Toi : *plus ou moins* que 17 h ?", "big": "?"}
+ ]
+}
