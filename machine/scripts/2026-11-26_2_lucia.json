@@ -1,0 +1,14 @@
+{
+ "voice": "none",
+ "broll": true,
+ "face": "phone",
+ "chat_name": "Kevin",
+ "segments": [
+  {"caption": "Ton pote veut sortir *ce week-end*", "tag": "GTA 6", "dur": 1.9, "say": "x"},
+  {"chat": [["lui", "On sort samedi ?"]], "dur": 1.5, "say": "x"},
+  {"chat": [["moi", "Je peux pas, j'ai un plan"]], "dur": 1.7, "say": "x"},
+  {"chat": [["lui", "Avec qui ??"]], "dur": 1.4, "say": "x"},
+  {"chat": [["moi", "Lucia. A Vice City."]], "dur": 1.8, "say": "x"},
+  {"caption": "*Tague* ton pote qui annule tout pour GTA 6", "tag": "TAGUE-LE", "dur": 2.1, "say": "x"}
+ ]
+}
