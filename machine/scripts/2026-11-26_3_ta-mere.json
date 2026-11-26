@@ -1,0 +1,13 @@
+{
+ "voice": "none",
+ "broll": true,
+ "face": "dancing",
+ "segments": [
+  {"caption": "Ta mère quand tu dis *encore 5 minutes*", "tag": "GTA 6", "dur": 2.0, "say": "x"},
+  {"caption": "21 h : *encore 5 minutes*", "big": "21 H", "dur": 1.7, "say": "x"},
+  {"caption": "23 h : *juste cette mission*", "big": "23 H", "dur": 1.7, "say": "x"},
+  {"caption": "2 h : *je sauvegarde et j'arrête*", "big": "2 H", "dur": 1.8, "say": "x"},
+  {"caption": "Elle ne te croit *plus du tout*", "dur": 1.6, "say": "x"},
+  {"caption": "*Tague* ton pote et ses 5 minutes", "tag": "TAGUE-LE", "big": "?", "dur": 2.1, "say": "x"}
+ ]
+}
