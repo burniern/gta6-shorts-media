@@ -1,0 +1,36 @@
+{
+ "voice": "chatterbox:none",
+ "broll": true,
+ "face": "shocked",
+ "segments": [
+  {
+   "say": "Eux sont en congé, toi tu bosses.",
+   "caption": "Eux en congé, *toi au boulot*",
+   "tag": "GTA 6"
+  },
+  {
+   "say": "Aujourd'hui, c'est jour férié aux États-Unis.",
+   "caption": "*Thanksgiving* : jour férié aux USA",
+   "tag": "JEUDI 26.11"
+  },
+  {
+   "say": "Et le jeu fête sa première semaine.",
+   "caption": "GTA 6 a *pile 1 semaine*",
+   "big": "7 J"
+  },
+  {
+   "say": "Eux, ils ont la dinde et la manette.",
+   "caption": "Eux : *dinde et manette*"
+  },
+  {
+   "say": "Toi : réunion à neuf heures.",
+   "caption": "Toi : *réunion à 9 h*",
+   "big": "9 H"
+  },
+  {
+   "say": "Tu prends congé, ou tu es malade ?",
+   "caption": "Congé *ou malade* ?",
+   "big": "?"
+  }
+ ]
+}
