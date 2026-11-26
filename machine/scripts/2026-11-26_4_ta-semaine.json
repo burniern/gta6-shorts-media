@@ -1,0 +1,37 @@
+{
+ "voice": "chatterbox:none",
+ "broll": true,
+ "opener": "fireworks",
+ "segments": [
+  {
+   "say": "Ta première semaine de GTA 6 en quatre jours.",
+   "caption": "Ta semaine GTA 6 *en 4 jours*",
+   "tag": "J+7"
+  },
+  {
+   "say": "Jour un : juste une heure, promis.",
+   "caption": "Jour 1 : *juste une heure*",
+   "big": "J1"
+  },
+  {
+   "say": "Jour trois : tu manges devant la console.",
+   "caption": "Jour 3 : *repas devant la console*",
+   "big": "J3"
+  },
+  {
+   "say": "Jour cinq : tu rêves du jeu la nuit.",
+   "caption": "Jour 5 : *tu rêves du jeu*",
+   "big": "J5"
+  },
+  {
+   "say": "Jour sept : tu cherches la mini-carte dans la rue.",
+   "caption": "Jour 7 : *la mini-carte dans la rue*",
+   "big": "J7"
+  },
+  {
+   "say": "Et toi, tu en es où ?",
+   "caption": "Et toi, *tu en es où* ?",
+   "big": "?"
+  }
+ ]
+}
