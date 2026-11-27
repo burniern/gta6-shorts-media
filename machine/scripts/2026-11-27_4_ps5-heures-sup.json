@@ -4,7 +4,7 @@
  "opener": "neon",
  "segments": [
   {"say": "Ta PS5 va faire des heures sup ce week-end.", "caption": "Ta PS5 va faire *des heures sup*", "tag": "GTA 6"},
-  {"say": "Vendredi dix-sept heures, jusqu'à lundi sept heures.", "caption": "Vendredi 17 h à *lundi 7 h*", "tag": "CE WEEK-END"},
+  {"say": "Du vendredi soir au lundi matin.", "caption": "Vendredi 17 h à *lundi 7 h*", "tag": "CE WEEK-END"},
   {"say": "Ça fait soixante-deux heures.", "caption": "Ça fait *62 heures*", "big": "62 H"},
   {"say": "Toi, tu dors un peu. Elle, jamais.", "caption": "Toi tu dors. *Elle, jamais.*"},
   {"say": "Tu l'éteins, ou elle tourne tout le week-end ?", "caption": "Tu l'éteins *ou jamais* ?", "big": "?"}
