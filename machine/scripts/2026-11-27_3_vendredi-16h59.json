@@ -3,7 +3,7 @@
  "broll": true,
  "face": "celebrating",
  "segments": [
-  {"caption": "Toi vendredi à *16 h 59*", "tag": "GTA 6", "dur": 2.0, "say": "x"},
+  {"caption": "Toi vendredi à *16h59*", "tag": "GTA 6", "dur": 2.0, "say": "x"},
   {"caption": "17 h : boulot *terminé*", "big": "17 H", "dur": 1.6, "say": "x"},
   {"caption": "Samedi : *Vice City*", "big": "SAM", "dur": 1.5, "say": "x"},
   {"caption": "Dimanche : *Vice City*", "big": "DIM", "dur": 1.5, "say": "x"},
