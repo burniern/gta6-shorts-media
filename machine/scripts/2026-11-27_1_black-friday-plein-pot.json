@@ -1,0 +1,12 @@
+{
+ "voice": "chatterbox:none",
+ "broll": true,
+ "face": "shocked man",
+ "segments": [
+  {"say": "Tu attendais le Black Friday pour GTA 6 ?", "caption": "Tu attendais le *Black Friday* ?", "tag": "GTA 6"},
+  {"say": "C'est aujourd'hui, le Black Friday.", "caption": "Vendredi 27.11 : *Black Friday*", "tag": "AUJOURD'HUI"},
+  {"say": "Pourtant, le jeu n'est pas en promo.", "caption": "Stores PS5 et Xbox : *pas de promo*", "big": "0 %"},
+  {"say": "Toujours presque quatre-vingts dollars aux États-Unis.", "caption": "Toujours *79,99 $* aux USA", "big": "79,99 $"},
+  {"say": "Tu payes plein pot, ou tu attends ?", "caption": "Plein pot *ou tu attends* ?", "big": "?"}
+ ]
+}

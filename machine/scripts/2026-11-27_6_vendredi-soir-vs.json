@@ -1,0 +1,12 @@
+{
+ "voice": "chatterbox:none",
+ "broll": true,
+ "opener": "fireworks",
+ "segments": [
+  {"say": "Vendredi soir : ton pote contre toi.", "caption": "Vendredi soir : *ton pote vs toi*", "tag": "GTA 6"},
+  {"say": "Lui : soirée en ville, musique à fond.", "caption": "Lui : *soirée en ville*", "tag": "TON POTE"},
+  {"say": "Toi : la radio de Vice City, à fond aussi.", "caption": "Toi : *radio de Vice City*", "tag": "TOI"},
+  {"say": "Et vous rentrez tous les deux à quatre heures.", "caption": "Retour *à 4 h* pour les deux", "big": "4 H"},
+  {"say": "Tague ton pote qui sort ce soir.", "caption": "*Tague* ton pote qui sort ce soir", "tag": "TAGUE-LE"}
+ ]
+}

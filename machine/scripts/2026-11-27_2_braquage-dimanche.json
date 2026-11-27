@@ -1,0 +1,14 @@
+{
+ "voice": "none",
+ "broll": true,
+ "face": "phone",
+ "chat_name": "Kevin",
+ "segments": [
+  {"caption": "Ton pote lit ton message *sans contexte*", "tag": "GTA 6", "dur": 2.0, "say": "x"},
+  {"chat": [["lui", "Tu viens au foot dimanche ?"]], "dur": 1.6, "say": "x"},
+  {"chat": [["moi", "Je peux pas, j'ai un braquage"]], "dur": 1.8, "say": "x"},
+  {"chat": [["lui", "Un QUOI ??"]], "dur": 1.4, "say": "x"},
+  {"chat": [["moi", "Dans GTA 6. Respire."]], "dur": 1.7, "say": "x"},
+  {"caption": "*Tague* ton pote braqueur du dimanche", "tag": "TAGUE-LE", "dur": 2.1, "say": "x"}
+ ]
+}

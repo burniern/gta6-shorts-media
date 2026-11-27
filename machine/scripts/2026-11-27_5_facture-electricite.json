@@ -1,0 +1,12 @@
+{
+ "voice": "chatterbox:none",
+ "broll": true,
+ "face": "surprised",
+ "segments": [
+  {"say": "Ta mère devant la facture d'électricité.", "caption": "Ta mère devant *la facture d'électricité*", "tag": "GTA 6"},
+  {"say": "Elle cherche le coupable.", "caption": "Elle cherche *le coupable*"},
+  {"say": "La télé ? Éteinte. Le four ? Éteint.", "caption": "Télé : *éteinte*. Four : *éteint*."},
+  {"say": "Ta console ? Allumée depuis le dix-neuf novembre.", "caption": "Ta PS5 : *allumée depuis le 19*", "big": "19.11"},
+  {"say": "Tu avoues, ou tu accuses le frigo ?", "caption": "Tu avoues *ou c'est le frigo* ?", "big": "?"}
+ ]
+}

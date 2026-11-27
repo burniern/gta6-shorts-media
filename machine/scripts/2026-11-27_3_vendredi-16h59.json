@@ -1,0 +1,13 @@
+{
+ "voice": "none",
+ "broll": true,
+ "face": "celebrating",
+ "segments": [
+  {"caption": "Toi vendredi à *16 h 59*", "tag": "GTA 6", "dur": 2.0, "say": "x"},
+  {"caption": "17 h : boulot *terminé*", "big": "17 H", "dur": 1.6, "say": "x"},
+  {"caption": "Samedi : *Vice City*", "big": "SAM", "dur": 1.5, "say": "x"},
+  {"caption": "Dimanche : *Vice City*", "big": "DIM", "dur": 1.5, "say": "x"},
+  {"caption": "Lundi : *on verra*", "big": "LUN", "dur": 1.5, "say": "x"},
+  {"caption": "*Tague* ton pote qui disparaît ce week-end", "tag": "TAGUE-LE", "big": "?", "dur": 2.1, "say": "x"}
+ ]
+}
